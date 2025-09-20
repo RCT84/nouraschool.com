@@ -1,0 +1,451 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Noura.com</title>
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+        integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <section class="header">
+        <nav>
+            <a href="index.html"><img src="/file_00000000cc1861faaeb12a5d32ac6182.png" alt=""></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fas fa-x" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="">خانه</a></li>
+                    <li><a href="/about.html">درباره ما</a></li>
+                    <li><a href="/educationPrograms.html">برنامه های آموزشی</a></li>
+                    <li><a href="#facility">امکانات</a></li>
+                    <li><a href="#ourTeam">تیم ما</a></li>
+                    <li><a href="#activities">فعالیت ها</a></li>
+                    <li><a href="/gallery.html">گالری</a></li>
+                    <li><a href="#" onclick="showform()">ثبت نام</a></li>
+                    <li><a href="#contact">تماس</a></li>
+                </ul>
+            </div>
+            <i class="fas fa-bars" onclick="showMenu()"></i>
+        </nav>
+
+        <div class="text-box">
+            <h1>مکتب خصوصی نورا</h1>
+            <p>چراغ امروز برای فردا</p>
+            <a class="hero-btn" onclick="showform()">ثبت نام انلاین</a>
+            <a class="hero-btn" onclick="showDiv()">تماس فوری</a>
+        </div>
+
+        <!-- online regestration form in hidden due to some essential reports -->
+
+        <!-- <form id="helloForm" >
+            <i class="fas fa-x" onclick="hideForm()"></i>
+            <h1>در مورد خوتان خانه پری نمایید</h1>
+            <div>
+                <input type="text" placeholder="نام">
+                <input type="text" placeholder="نام پدر">
+            </div>
+                <textarea name="message" id="" cols="44" rows="10"></textarea>
+                
+          
+             
+                 
+            <div>
+               
+                <button class="accept-btn" type="submit">ثبت کردن</button>
+            </div>
+        </form> -->
+
+
+
+        
+        <div class="call-now" id="callNow">
+            <i class="fas fa-x" onclick="hideDiv()"></i>
+            <button onclick="showDiv1()">تماس با مدیر مکتب</button>
+            <button onclick="showDiv2()">تماس با سرمعلمیت</button>
+        </div>
+        <div class="call-info" id="callinfo">
+            <i class="fas fa-x" onclick="hideDiv1()"></i>
+            <h2>شماره تماس سرمعلم</h2>
+            <P>09374444444</P>
+        </div>
+        <div class="call-info2" id="callinfo2">
+            <i class="fas fa-x" onclick="hideDiv2()"></i>
+            <h2> شماره تماس مدیر مکتب </h2>
+            <P>09374444444</P>
+        </div>
+    </section>
+
+    <!-- about us -->
+    <section class="about" id="about">
+        <div class="about-text">
+            <h3>نورا</h3>
+            <p>مکتب خصوصی نورا در سال ۱۳۹۷ شمسی به سطح ابتدایی در ناحیه سیزدهم تعلیمی، شهر کابل به فعالیت آغاز کرد. هر
+                ساله
+                به صدها کودک علاقه مند آموزش ، خدمات معیاری آموزشی و پرورشی ارائه کرده است.
+                هم چنان رهبری مکتب مصمم به ادامه و ارائه این خدمات به شکل گسترده‌تر و با کیفیت می‌باشد.
+                باورمندیم که هر انسان باید با آموزش روشنگر مواجه شود، قدرت تحلیل درست و منطقی و تفکیک دقیق مسائل را
+                بیاموزند.
+                سلامت فکری هر انسان برای ما ارزشمند است و برای آموزش سالم و رسیدن به سلامت فکری تلاش می‌کنیم. </p>
+            <a href="/about.html">بیشتر بدانید</a>
+        </div>
+        <img src="/file_00000000cc1861faaeb12a5d32ac6182.png" alt="">
+
+    </section>
+
+    <!-- learning programes -->
+    <section class="course" id="learn">
+        <h1>برنامه های آموزشی ما</h1>
+        <p>ما بهترین را ارایه میدهیم
+        </p>
+
+        <div class="row">
+            <div class="course-col">
+                <h3>از دوره امادگی تا صنف نهم</h3>
+                <P>این بخش مطابق با نصاب تعلیمی کشور همراه با مواردی کاربردی زندگی سالم به پیش برده میشود. که این برنامه
+                    برای اطفال شما میتواند خیلی مفید باشد</P>
+            </div>
+
+            <div class="course-col">
+                <h3>آموزش زبان انگلیسی</h3>
+                <P> آموزش از ابتدا الی سطح عالی زبان انگلیسی و با مومنت درسی معاصر و کاربردی برای زندگی روزمره و اکادمیک
+                    که برای یک اینده روشن به شما خیلی کمک مکیند</P>
+            </div>
+
+            <div class="course-col">
+                <h3>آموزش قران کریم</h3>
+                <P>آموزش از مرحل ابتدایی چون روخوانی, روان خوانی الی مراحل عالی چون تجوید, صوت و الحن ,ترجمه و مفاهیم,
+                    را شامل میگردد</P>
+            </div>
+        </div>
+    </section>
+    <!-- faciltity -->
+    <section class="facility" id="facility">
+        <h3>امکانات آموزشی ما</h3>
+        <div class="row">
+            <div class="facilty-col">
+                <img src="/facily (1).jpg" alt="">
+                <div class="layer">
+                    <h2>صنف معیاری</h2>
+                </div>
+
+            </div>
+
+            <div class="facilty-col">
+                <img src="/facily (2).jpg" alt="">
+                <div class="layer">
+                    <h2>زمین بازی معیاری</h2>
+                </div>
+
+            </div>
+
+            <div class="facilty-col">
+                <img src="/facily (3).jpg" alt="">
+                <div class="layer">
+                    <h2>کتاب خانه معیاری</h2>
+                </div>
+
+            </div>
+        </div>
+        <a href="/gallery.html">از گالری دیدن نمایید</a>
+    </section>
+
+    <!-- our team -->
+    <section class="our-team" id="ourTeam">
+        <div>
+            <h1> اعضای تیم ما </h1>
+            <div class="row">
+                <div class="team-col">
+                    <img src="/team.jpg" alt="">
+                    <h2>عبدالرحیم امیری</h2>
+                    <div class="link">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p>این استاد با کوشش بسیار زیاد توانسته است که تچربه ده ساله را در بخش تدریس
+                        کسب نماید که این یک بخش بسیار با ارزش و قابل اهمیت میباشد</p>
+                </div>
+
+                <div class="team-col">
+                    <img src="/team.jpg" alt="">
+                    <h2>عبدالرحیم امیری</h2>
+                    <div class="link">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p>این استاد با کوشش بسیار زیاد توانسته است که تچربه ده ساله را در بخش تدریس
+                        کسب نماید که این یک بخش بسیار با ارزش و قابل اهمیت میباشد</p>
+                </div>
+
+                <div class="team-col">
+                    <img src="/our team next person.png" alt="">
+                    <p style="text-align: center;font-size: 30px;padding:40px;"><a href="teachers.html"
+                            style="text-decoration: none;color:black;cursor: pointer;">اساتید و معلومات بیشتر<i
+                                class="fas fa-arrow-left"></i></a></p>
+
+                </div>
+            </div>
+
+    </section>
+
+    <!-- activites -->
+    <section class="activity" id="activities">
+        <h1>فعالیت های ما</h1>
+        <div class="activities">
+            <div class="leftacti">
+                <div onclick="display1()"> فعالیت های صنفی <i class="fas fa-chart-line"></i></div>
+                <div onclick="display2()"> فعالیت های خارجی <i class="fas fa-running"></i></div>
+                <div onclick="display3()"> فعالیت های گروهی <i class="fas fa-users"></i></div>
+            </div>
+            <div class="middleacti">
+                <video controls src="/activity video.mp4"></video>
+            </div>
+            <!-- mini -->
+            <div class="middleacti1" id="videoup1">
+                <i class="fas fa-close" onclick="closevideo1()"
+                    style="text-align: right;width:100%;padding:10px; cursor: pointer;"> بستن </i>
+                <video controls src="/activity video.mp4"></video>
+                <i class="fas fa-forward"
+                    style="flex-basis: 31%; text-align: center; cursor: pointer;padding:10px;"></i>
+                <i class="fas fa-pause" style="flex-basis: 31%; text-align: center; cursor: pointer;padding:10px;"></i>
+                <i class="fas fa-play" style="flex-basis: 31%; text-align: center; cursor: pointer;padding:10px;"></i>
+                <i class="fas fa-backward"
+                    style="flex-basis: 31%; text-align: center; cursor: pointer;padding:10px;"></i>
+            </div>
+            <!-- first view -->
+            <div class="middleacti1" id="videoup2">
+                <i class="fas fa-close" onclick="closevideo2()"
+                    style="text-align: right;width:100%;padding:10px; cursor: pointer;"> بستن </i>
+                <video controls src="/activity video.mp4"></video>
+                <i class="fas fa-forward"
+                    style="flex-basis: 31%; text-align: center; cursor: pointer;padding:10px;"></i>
+                <i class="fas fa-pause" style="flex-basis: 31%; text-align: center; cursor: pointer;padding:10px;"></i>
+                <i class="fas fa-play" style="flex-basis: 31%; text-align: center; cursor: pointer;padding:10px;"></i>
+                <i class="fas fa-backward"
+                    style="flex-basis: 31%; text-align: center; cursor: pointer;padding:10px;"></i>
+            </div>
+            <!-- second view -->
+            <div class="middleacti1" id="videoup3">
+                <i class="fas fa-close" onclick="closevideo3()"
+                    style="text-align: right;width:100%;padding:10px; cursor: pointer;"> بستن </i>
+                <video controls src="/activity video.mp4"></video>
+                <i class="fas fa-forward"
+                    style="flex-basis: 31%; text-align: center; cursor: pointer;padding:10px;"></i>
+                <i class="fas fa-pause" style="flex-basis: 31%; text-align: center; cursor: pointer;padding:10px;"></i>
+                <i class="fas fa-play" style="flex-basis: 31%; text-align: center; cursor: pointer;padding:10px;"></i>
+                <i class="fas fa-backward"
+                    style="flex-basis: 31%; text-align: center; cursor: pointer;padding:10px;"></i>
+            </div>
+
+            <!-- third view -->
+            <div class="middleacti1" id="videoup4">
+                <i class="fas fa-close" onclick="closevideo4()"
+                    style="text-align: right;width:100%;padding:10px; cursor: pointer;"> بستن </i>
+                <video controls src="/activity video.mp4"></video>
+                <i class="fas fa-forward"
+                    style="flex-basis: 31%; text-align: center; cursor: pointer;padding:10px;"></i>
+                <i class="fas fa-pause" style="flex-basis: 31%; text-align: center; cursor: pointer;padding:10px;"></i>
+                <i class="fas fa-play" style="flex-basis: 31%; text-align: center; cursor: pointer;padding:10px;"></i>
+                <i class="fas fa-backward"
+                    style="flex-basis: 31%; text-align: center; cursor: pointer;padding:10px;"></i>
+            </div>
+
+            <!-- fourth view -->
+            <div class="middleacti1" id="videoup5">
+                <i class="fas fa-close" onclick="closevideo5()"
+                    style="text-align: right;width:100%;padding:10px; cursor: pointer;"> بستن </i>
+                <video controls src="/activity video.mp4"></video>
+                <i class="fas fa-forward"
+                    style="flex-basis: 31%; text-align: center; cursor: pointer;padding:10px;"></i>
+                <i class="fas fa-pause" style="flex-basis: 31%; text-align: center; cursor: pointer;padding:10px;"></i>
+                <i class="fas fa-play" style="flex-basis: 31%; text-align: center; cursor: pointer;padding:10px;"></i>
+                <i class="fas fa-backward"
+                    style="flex-basis: 31%; text-align: center; cursor: pointer;padding:10px;"></i>
+            </div>
+            <!-- sixth view -->
+            <div class="middleacti1" id="videoup6">
+                <i class="fas fa-close" onclick="closevideo6()"
+                    style="text-align: right;width:100%;padding:10px; cursor: pointer;"> بستن </i>
+                <video controls src="/activity video.mp4"></video>
+                <i class="fas fa-forward"
+                    style="flex-basis: 31%; text-align: center; cursor: pointer;padding:10px;"></i>
+                <i class="fas fa-pause" style="flex-basis: 31%; text-align: center; cursor: pointer;padding:10px;"></i>
+                <i class="fas fa-play" style="flex-basis: 31%; text-align: center; cursor: pointer;padding:10px;"></i>
+                <i class="fas fa-backward"
+                    style="flex-basis: 31%; text-align: center; cursor: pointer;padding:10px;"></i>
+            </div>
+
+            <div class="rightacti">
+                <div onclick="display4()"> <i class="fas fa-praying-hands"></i> فعالیت های مذهبی</div>
+                <div onclick="display5()"> <i class="fas fa-hamburger"></i> سیرعلمی </div>
+                <div onclick="display6()"> <i class="fas fa-gift"></i> محافل </div>
+            </div>
+        </div>
+    </section>
+    <!-- contact-->
+    <section class="contact" id="contact">
+        <h1>ارتباط با ما</h1>
+        <i class="fas fa-phone" onclick="showme()"></i>
+        <i class="fas fa-message" onclick="showme1()"></i>
+        <div class="floating" id="conTact">
+            <i class="fas fa-x" onclick="hideme()"></i>
+            <h2>فرستادن با واتساب</h2>
+            <textarea name="" id="" placeholder="پیام کتبی شما"></textarea>
+            <i class="fas fa-paper-plane"></i>
+        </div>
+        <div class="floating1" id="conTact1">
+            <i class="fas fa-x" onclick="hideme1()"></i>
+            <h2>فرستادن با ایمیل</h2>
+            <textarea name="" id="" placeholder="پیام کتبی شما"></textarea>
+            <i class="fas fa-paper-plane"></i>
+        </div>
+
+    </section>
+
+
+
+
+
+
+
+
+
+
+    <!-- footer part -->
+    <section style="width:100%; height:50%;text-align: center;
+     padding-top:20px; padding-bottom: 30px;line-height: 1.4;
+     font-size: 15px;font-weight: bold;background-color:rgb(200, 194, 194);
+     cursor:pointer;">
+        <p>ریاست معارف شهر کابل</p>
+        <p>مکتب خصوصی نورا</p>
+        <p>تماس با ما|ارسال ایمیل</p>
+        <p>@تمام حقوق محفوظ است</p>
+    </section>
+    <!-- script for toggle btn -->
+
+    <script>
+        const navLinks = document.getElementById("navLinks");
+        function showMenu() {
+            navLinks.style.display = "block";
+        }
+        function hideMenu() {
+            navLinks.style.display = "none"
+        }
+    </script>
+    <script>
+        const helloForm = document.getElementById('helloForm');
+        function showform() {
+            helloForm.style.display = "block";
+        }
+        function hideForm() {
+            helloForm.style.display = "none";
+        }
+    </script>
+    <script>
+        const callNow = document.getElementById('callNow')
+        function showDiv() {
+            callNow.style.display = 'block';
+        }
+        function hideDiv() {
+            callNow.style.display = 'none';
+        }
+    </script>
+    <!-- no showing -->
+    <script>
+        const callinfo = document.getElementById('callinfo')
+        function showDiv2() {
+            callinfo.style.display = 'block';
+        }
+        function hideDiv2() {
+            callinfo2.style.display = 'none';
+        }
+
+    </script>
+    <!-- call shwing -->
+    <script>
+        const callinfo2 = document.getElementById('callinfo2')
+        function showDiv1() {
+            callinfo2.style.display = 'block';
+        }
+        function hideDiv1() {
+            callinfo.style.display = 'none';
+        }
+
+    </script>
+
+    <!-- last part i section -->
+    <script>
+        const conTact = document.getElementById('conTact')
+        function hideme() {
+            conTact.style.display = 'none';
+        }
+        function showme() {
+            conTact.style.display = 'grid';
+        }
+
+    </script>
+    <script>
+        const conTact1 = document.getElementById('conTact1')
+        function hideme1() {
+            conTact1.style.display = 'none';
+        }
+        function showme1() {
+            conTact1.style.display = 'grid';
+        }
+
+    </script>
+    <script>
+        const videopop = document.getElementById('activities')
+        function closevideo1() {
+            videoup1.style.display = 'none'
+        }
+        function display1() {
+            videoup1.style.display = 'block'
+        }
+
+        function closevideo2() {
+            videoup2.style.display = 'none'
+        }
+        function display2() {
+            videoup2.style.display = 'block'
+        }
+
+        function closevideo3() {
+            videoup3.style.display = 'none'
+        }
+        function display3() {
+            videoup3.style.display = 'block'
+        }
+
+        function closevideo4() {
+            videoup4.style.display = 'none'
+        }
+        function display4() {
+            videoup4.style.display = 'block'
+        }
+
+        function closevideo5() {
+            videoup5.style.display = 'none'
+        }
+        function display5() {
+            videoup5.style.display = 'block'
+        }
+
+        function closevideo6() {
+            videoup6.style.display = 'none'
+        }
+        function display6() {
+            videoup6.style.display = 'block'
+        }
+
+    </script>
+</body>
+
+</html>
