@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LogIn Page</title>
+
+
+    <style type="text/css">
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        body {
+            background-color: rgb(175, 247, 223);
+        }
+
+
+        .maincontainer {
+            background-color: #0ef;
+            width: 1100px;
+            margin: auto;
+            border: 1px solid #0ef;
+            height: 500px;
+            border-radius: 30px;
+            box-shadow: 0 0 10px white;
+            margin-top: 150px;
+        }
+
+        .whiteback {
+            background-color: white;
+            width: 100%;
+            height: 100%;
+            border-radius: 30px;
+            border-top-right-radius: 250px;
+            display: flex;
+
+        }
+
+        .content,
+        .content1 {
+            width: calc(100% /2);
+            height: 100%;
+        }
+
+        .content {
+            background-color: #0ef;
+            border-top-left-radius: 30px;
+            border-top-right-radius: 250px;
+            border-bottom-left-radius: 250px;
+            text-align: center;
+            transform: translateX(550px);
+            transition: .5s ease;
+            z-index: 3;
+
+        }
+
+        .dark {
+            width: 100%;
+            height: 100%;
+            border-radius: 999px;
+            background-color: rgb(2, 198, 212);
+            padding: 30px;
+            border-top-left-radius: 0;
+        }
+
+        .content img {
+            width: 150px;
+        }
+
+        .content .name {
+            font-size: 30px;
+            margin-bottom: 20px;
+        }
+
+        .content .details {
+            font-size: 19px;
+            margin-bottom: 50px;
+        }
+
+        .content button {
+            padding: 10px 60px;
+            border: 1px solid white;
+            border-radius: 999px;
+            background: none;
+            color: white;
+            font-weight: bold;
+            font-size: 20px;
+            cursor: pointer;
+            transition: all .3s ease;
+        }
+
+        .content button:hover {
+            background-color: white;
+            color: #0ef;
+            border-color: #0ef;
+        }
+
+        .content p {
+            padding: 10px;
+        }
+
+        .content p a {
+            text-decoration: none;
+            color: white;
+            cursor: pointer;
+            transition: all .3s ease;
+        }
+
+        .content p a:hover {
+            text-decoration: underline;
+            color: blue;
+        }
+
+        .content1 {
+
+            padding: 30px;
+            padding-top: 50px;
+            text-align: center;
+            z-index: 1;
+        }
+
+        .content1 h2 {
+            margin-bottom: 70px;
+        }
+
+        .content1 div {
+            text-align: left;
+            margin-top: 20px;
+            margin-left: 40px;
+        }
+
+        .content1 div input {
+            line-height: 35px;
+            width: 300px;
+            margin-left: 30px;
+            margin-top: 10px;
+            padding: 10px;
+            font-size: 20px;
+            border: 1px solid #0ef;
+            border-radius: 5px;
+            outline: none;
+            user-select: none;
+        }
+
+        .content1 input[type='submit'] {
+            color: white;
+            font-size: 20px;
+            background-color: #0ef;
+            padding: 10px 40px;
+            margin-top: 30px;
+            text-decoration: none;
+            border: none;
+            cursor: pointer;
+            border-radius: 999px;
+            transition: all .3s ease;
+            user-select: none;
+
+        }
+
+        .content1 input[type='submit']:hover {
+            background-color: white;
+            color: #0ef;
+            border: .3px solid #0ef;
+
+        }
+
+        .wellcome {
+            width: calc(100% /2);
+            position: absolute;
+        }
+
+        .wellcome .image {
+            width: 550px;
+            height: 498px;
+            border-top-left-radius: 30px;
+            border-bottom-left-radius: 30px;
+            overflow: hidden;
+            background-image: linear-gradient(rgb(0, 0, 0, .4)), url(welcome.jpg);
+            background-size: cover;
+            background-position: center;
+            z-index: 1;
+            transition: all .4s ease;
+        }
+
+
+        .signup {
+            position: absolute;
+            top: 0;
+            z-index: 2;
+            width: 550px;
+            height: 498px;
+            backdrop-filter: blur(30px);
+            opacity: 0;
+            transition: all .3s ease;
+            border-top-left-radius: 30px;
+            border-bottom-left-radius: 30px;
+            padding: 20px;
+            text-align: center;
+        }
+        .signup h2{
+            text-align: center;
+            font-size: 30px;
+            color:white;
+            border-bottom: 1px solid white;
+            padding: 5px;
+        }
+
+        .info h6{
+            color:white;
+            font-size: 20px;
+            text-align: left;
+            margin-left:110px;
+            font-weight: 200;
+            margin-top:15px;
+            margin-bottom: 5px;
+        }
+        .info input{
+            outline: none;
+            line-height: 20px;
+            padding:10px 12px;
+            width:300px;
+            font-size: 20px;
+            color:white;
+            background: none;
+            border:.5px solid #0ef;
+            border-radius: 999px;
+        }
+        .signup input::placeholder{
+            color:white;
+        }
+        .signup .input{
+        padding:10px 30px;
+        margin-top:15px;
+        border-radius: 999px;
+        background: none;
+        color:white;
+        font-size: 25px;
+        border:.5px solid white;
+        transition: all .3s ease;
+        }
+        .signup .input:hover{
+            background-color: white;
+            color: #0ef;
+            border-color: #0ef;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="maincontainer">
+        <div class="whiteback">
+            <div class="wellcome">
+                <div class="image" id="image"></div>
+                <form class="signup" id="signup">
+                    <h2>Sign up!</h2>
+                    <div class="info">
+                        <h6>Type Your First Name:</h6>
+                        <input type="text" class="name" placeholder="name" required>
+
+                        <h6>Type Your Last Name:</h6>
+                        <input type="text" class="last-name" placeholder="last name" required>
+
+                        <h6> Enter Your Valid Email Adress:</h6>
+                        <input type="email" class="email" placeholder="your email" required>
+
+                        <h6>Enter your date of Birth:</h6>
+                        <input type="date" class="birth" required>
+                    </div>
+
+                    <input class="input" type="submit" onclick="sendviawhatapp()" value="Creat!">
+                </form>
+            </div>
+            <div class="content" id="menu">
+                <div class="dark">
+                    <img src="logo.png" alt="logo">
+                    <div class="name">Noura High School</div>
+                    <div class="details">This School is bult to make the best <br> so join our comunity </div>
+                    <button onclick="signupshow()">Sign up</button>
+                    <button onclick="showlog()" id="login">Log In</button>
+                    <p> Don't have an Account? <a href=""> create and accout</a></p>
+                </div>
+            </div>
+            <form class="content1">
+                <h2>LOG IN</h2>
+
+                <div class="username">
+                    <h4>Type Your User Name</h4>
+                    <input type="text" placeholder="User Name" required>
+                </div>
+                <div class="password">
+                    <h4>Type your password</h4>
+                    <input type="password" placeholder="password" required>
+                </div>
+                <input type="submit" value="Log In">
+            </form>
+        </div>
+    </div>
+
+
+    <script>
+        function showlog() {
+            if (menu.style.transform = 'translatex(550px)') {
+                menu.style.transform = 'translatex(0)'
+                image.style.opacity = '0'
+                signup.style.opacity = '0'
+            }
+        };
+
+        function signupshow() {
+            if (menu.style.transform = 'translatex(0)') {
+                menu.style.transform = 'translatex(550px)'
+                signup.style.opacity = '1'
+                image.style.opacity = '1'
+            }
+        };
+
+function sendviawhatapp(){
+    var phonenumber="+93749542078".value;
+    var name = document.querySelector('.name').value;
+    var lastname = document.querySelector('.last-name').value;
+    var email = document.querySelector('.email').value;
+    var birth = document.querySelector('.birth').value;
+    var url="https://wa.me/" + phonenumber + "?text=" + "*Name :*" +name+"%0a"
+    + "*Name :*" +name+"%0a"
+    + "*last-Name :*" +lastname+"%0a"
+    + "*email :*" +email+"%0a"
+    + "*date of birth :*" +birth+"%0a%0a"
+    +"wellcoe to our comunity";
+
+    window.open(url,'_blank').focus();
+}
+    </script>
+</body>
+
+</html>
