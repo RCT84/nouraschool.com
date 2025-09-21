@@ -17,6 +17,7 @@
 
         body {
             background-color: rgb(175, 247, 223);
+            background-color:#007a8a;
         }
 
 
@@ -124,11 +125,12 @@
             padding-top: 50px;
             text-align: center;
             z-index: 1;
-            animation:autoshow;
+            animation: autoshow;
             animation-delay: 0;
             animation-duration: 2s;
         }
-         @keyframes autoshow {
+
+        @keyframes autoshow {
             from {
                 opacity: 0;
                 transform: translateY(200px) scale(0.3);
@@ -141,7 +143,9 @@
         }
 
         .content1 h2 {
-            margin-bottom: 70px;
+            margin-top:20px;
+            margin-bottom: 30px;
+            font-size: 30px;
         }
 
         .content1 div {
@@ -157,7 +161,7 @@
             margin-top: 10px;
             padding: 10px;
             font-size: 20px;
-            border: 1px solid #0ef;
+            border: 1px solid #007a8a;
             border-radius: 5px;
             outline: none;
             user-select: none;
@@ -191,7 +195,7 @@
         }
 
         .wellcome .image {
-            width: 550px;
+            width: 770px;
             height: 498px;
             border-top-left-radius: 30px;
             border-bottom-left-radius: 30px;
@@ -200,7 +204,7 @@
             background-size: cover;
             background-position: center;
             z-index: 1;
-            transition: all .4s ease;
+            transition: all .4s ease-in;
         }
 
 
@@ -220,7 +224,8 @@
             text-align: center;
             animation: autohide 2s ease;
         }
-         @keyframes autohide {
+
+        @keyframes autohide {
             from {
                 opacity: 0;
                 transform: translate(200px) scale(0.3);
@@ -231,58 +236,63 @@
                 transform: translate(0) scale(1);
             }
         }
-        .signup h2{
+
+        .signup h2 {
             text-align: center;
             font-size: 30px;
-            color:white;
+            color: white;
             border-bottom: 1px solid white;
             padding: 5px;
         }
 
-        .info h6{
-            color:white;
-            font-size: 20px;
+        .info h6 {
+            color: orange;
+            font-size: 15px;
             text-align: left;
-            margin-left:110px;
+            margin-left: 110px;
             font-weight: 200;
-            margin-top:15px;
+            margin-top: 15px;
             margin-bottom: 5px;
         }
-        .info input{
+
+        .info input {
             outline: none;
             line-height: 20px;
-            padding:10px 12px;
-            width:300px;
-            font-size: 20px;
-            color:white;
+            padding: 10px 12px;
+            width: 300px;
+            font-size: 18px;
+            color: white;
             background: none;
-            border:.5px solid #0ef;
+            border: .5px solid orange;
             border-radius: 999px;
         }
-        .signup input::placeholder{
-            color:white;
+
+        .signup input::placeholder {
+            color: white;
         }
-        .signup .input{
-        padding:10px 30px;
-        margin-top:15px;
-        border-radius: 999px;
-        background: none;
-        color:white;
-        font-size: 25px;
-        border:.5px solid white;
-        transition: all .3s ease;
+
+        .signup .input {
+            padding: 10px 30px;
+            margin-top: 15px;
+            border-radius: 999px;
+            background: none;
+            color: orange;
+            font-size: 25px;
+            border: .5px solid orange;
+            transition: all .3s ease;
         }
-        .signup .input:hover{
-            background-color: white;
-            color: #0ef;
-            border-color: #0ef;
+
+        .signup .input:hover {
+            background-color: transparent;
+            color: orange;
+            border-color: white;
         }
     </style>
 </head>
 
-<body>
+<body id="body">
     <div class="maincontainer" id="main">
-        <div class="whiteback" id="white" >
+        <div class="whiteback" id="white">
             <div class="wellcome">
                 <div class="image" id="image"></div>
                 <form class="signup" id="signup">
@@ -301,7 +311,7 @@
                         <input type="date" class="birth" required>
                     </div>
 
-                    <input class="input" href="main.html" type="submit" onclick="sendviawhatapp()" value="Creat!">
+                    <input class="input" type="submit" onclick="alert('Your request is under process! please wait for verfication!')" value="Creat!">
                 </form>
             </div>
             <div class="content" id="menu">
@@ -311,7 +321,8 @@
                     <div class="details">This School is bult to make the best <br> so join our comunity </div>
                     <button onclick="signupshow()">Sign up</button>
                     <button onclick="showlog()" id="login">Log In</button>
-                    <p> Don't have an Account? <a href="main.html"> create and accout</a></p>
+                    <p> Don't have an Account? <a href="#"
+                            onclick="alert('Sorry! You can not create new accounts yet!')"> create and accout</a></p>
                 </div>
             </div>
             <form class="content1" id="contact1">
@@ -334,16 +345,15 @@
     <script>
         function showlog() {
             if (menu.style.transform = 'translatex(550px)') {
-                menu.style ='background-color:red'
+                menu.style = 'background-color:#oef'
                 menu.style.transform = 'translatex(0)'
-                image.style.opacity = '0'
+                image.style = 'opacity:0;width:300px;border-top-right-radius:999px'
                 signup.style.opacity = '0'
-                main.style ='background-color:red;'
-                contact1.style.display ='block'
-                signup.style.display ='none'
-    
-
-            
+                main.style = 'background-color:#0ef;'
+                contact1.style.display = 'block'
+                signup.style.display = 'none'
+                white.style='background-color:#ccfbff'
+                dark.style='border-top-left-radius:100px'
             }
         };
 
@@ -352,29 +362,25 @@
                 menu.style.transform = 'translatex(550px)'
                 signup.style.opacity = '1'
                 signup.style.display = 'block'
-                image.style.opacity = '1'
-                 menu.style ='background-color:green'
-main.style ='background-color:green;'
-contact1.style.display ='none'
+                image.style = 'opacity:1;width:800px;filter:blur(2px)'
+                menu.style = 'background-color:#0ef; border-bottom-right-radius:30px'
+                main.style = 'background-color:#0ef;'
+                contact1.style.display = 'none'
+                   dark.style='border-top-left-radius:00px'
             }
         };
-
-function sendviawhatapp(){
-    var phonenumber="+93749542078".value;
-    var name = document.querySelector('.name').value;
-    var lastname = document.querySelector('.last-name').value;
-    var email = document.querySelector('.email').value;
-    var birth = document.querySelector('.birth').value;
-    var url="https://wa.me/" + phonenumber + "?text=" + "*Name :*" +name+"%0a"
-    + "*Name :*" +name+"%0a"
-    + "*last-Name :*" +lastname+"%0a"
-    + "*email :*" +email+"%0a"
-    + "*date of birth :*" +birth+"%0a%0a"
-    +"wellcoe to our comunity";
-
-    window.open(url,'_blank').focus();
-}
     </script>
 </body>
 
 </html>
+
+<!-- 
+
+Light Orange: #FFD580
+Soft Orange: #FFB347
+Standard Orange: #FFA500
+Deep Orange: #FF8C00
+Dark Orange: #FF6700
+Burnt Orange: #CC5500
+Pale Orange: #FFE5B4
+Vibrant Orange: #FF5E13 -->
