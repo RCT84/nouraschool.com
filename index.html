@@ -29,6 +29,7 @@
             border-radius: 30px;
             box-shadow: 0 0 10px white;
             margin-top: 150px;
+            transition: 1s ease;
         }
 
         .whiteback {
@@ -38,6 +39,7 @@
             border-radius: 30px;
             border-top-right-radius: 250px;
             display: flex;
+            transition: 1s ease;
 
         }
 
@@ -122,6 +124,20 @@
             padding-top: 50px;
             text-align: center;
             z-index: 1;
+            animation:autoshow;
+            animation-delay: 0;
+            animation-duration: 2s;
+        }
+         @keyframes autoshow {
+            from {
+                opacity: 0;
+                transform: translateY(200px) scale(0.3);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0) scale(1);
+            }
         }
 
         .content1 h2 {
@@ -202,6 +218,18 @@
             border-bottom-left-radius: 30px;
             padding: 20px;
             text-align: center;
+            animation: autohide 2s ease;
+        }
+         @keyframes autohide {
+            from {
+                opacity: 0;
+                transform: translate(200px) scale(0.3);
+            }
+
+            to {
+                opacity: 1;
+                transform: translate(0) scale(1);
+            }
         }
         .signup h2{
             text-align: center;
@@ -253,8 +281,8 @@
 </head>
 
 <body>
-    <div class="maincontainer">
-        <div class="whiteback">
+    <div class="maincontainer" id="main">
+        <div class="whiteback" id="white" >
             <div class="wellcome">
                 <div class="image" id="image"></div>
                 <form class="signup" id="signup">
@@ -277,7 +305,7 @@
                 </form>
             </div>
             <div class="content" id="menu">
-                <div class="dark">
+                <div class="dark" id="dark">
                     <img src="logo.png" alt="logo">
                     <div class="name">Noura High School</div>
                     <div class="details">This School is bult to make the best <br> so join our comunity </div>
@@ -286,7 +314,7 @@
                     <p> Don't have an Account? <a href="main.html"> create and accout</a></p>
                 </div>
             </div>
-            <form class="content1">
+            <form class="content1" id="contact1">
                 <h2>LOG IN</h2>
 
                 <div class="username">
@@ -306,9 +334,16 @@
     <script>
         function showlog() {
             if (menu.style.transform = 'translatex(550px)') {
+                menu.style ='background-color:red'
                 menu.style.transform = 'translatex(0)'
                 image.style.opacity = '0'
                 signup.style.opacity = '0'
+                main.style ='background-color:red;'
+                contact1.style.display ='block'
+                signup.style.display ='none'
+    
+
+            
             }
         };
 
@@ -318,6 +353,9 @@
                 signup.style.opacity = '1'
                 signup.style.display = 'block'
                 image.style.opacity = '1'
+                 menu.style ='background-color:green'
+main.style ='background-color:green;'
+contact1.style.display ='none'
             }
         };
 
