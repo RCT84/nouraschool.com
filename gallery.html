@@ -1,0 +1,495 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NouraPhotos.com</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+        integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <style>
+            * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    max-width: 900px;
+    margin: auto;
+    padding: 20px;
+}
+
+nav li {
+    list-style-type: none;
+    padding: 10px;
+}
+
+nav li a {
+    text-decoration: none;
+    color: #0ef;
+    font-size: 15px;
+    font-weight: bold;
+    border: 1px solid #0ef;
+    border-radius: 50px;
+    padding: 8px 12px;
+    transition: all .3s ease;
+}
+nav li .active,
+nav li a:hover {
+    border: 1px solid white;
+    background-color: #0ef;
+    color: white;
+}
+nav a {
+    border: 1px solid #0ef;
+    padding:10px;
+    border-radius:50px;
+}
+nav a{
+    color:#0ef;
+    transition: .3s ease;
+}
+nav a:hover{
+    background-color: #0ef;
+    color:white;
+    
+}
+
+/* dropdown menu */
+.dropdown {
+    display: flex;
+    padding: 10px;
+    margin-bottom: 10px;
+    width: 100%;
+    position: absolute;
+    border: 1px solid #0ef;
+    flex-wrap: wrap;
+    display: none;
+    animation:showmotion 1s;
+}
+
+.dropdown .images {
+    width: calc(100%/4);
+    padding: 7px;
+    overflow: hidden;
+}
+
+.dropdown h1 {
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.dropdown span {
+    display: flex;
+    overflow: hidden;
+    border-radius: 5px;
+}
+
+.dropdown .images img {
+    width: 100%;
+    overflow: hidden;
+    transition: .3s ease;
+    vertical-align: middle;
+
+}
+
+.dropdown img:hover {
+    transform: scale(1.1);
+}
+
+/* dropdown meu1 */
+.dropdown1 {
+    display: flex;
+    padding: 10px;
+        margin-bottom: 10px;
+    width: 100%;
+    position: absolute;
+    border: 1px solid #0ef;
+    flex-wrap: wrap;
+    animation:showmotion 1s ;
+    display: none;
+}
+
+.dropdown1 .images {
+    width: calc(100%/4);
+    padding: 7px;
+    overflow: hidden;
+}
+
+.dropdown1 h1 {
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.dropdown1 span {
+    display: flex;
+    overflow: hidden;
+    border-radius: 5px;
+}
+
+.dropdown1 .images img {
+    width: 100%;
+    overflow: hidden;
+    transition: .3s ease;
+    vertical-align: middle;
+
+}
+
+.dropdown1 img:hover {
+    transform: scale(1.1);
+}
+
+/* dropdown meu2 */
+.dropdown2 {
+    display: flex;
+    padding: 10px;
+        margin-bottom: 10px;
+    width: 100%;
+    position: absolute;
+    border: 1px solid #0ef;
+    flex-wrap: wrap;
+    display: none;
+    animation:showmotion 1s;
+}
+
+.dropdown2 .images {
+    width: calc(100%/4);
+    padding: 7px;
+    overflow: hidden;
+}
+
+.dropdown2 h1 {
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.dropdown2 span {
+    display: flex;
+    overflow: hidden;
+    border-radius: 5px;
+}
+
+.dropdown2 .images img {
+    width: 100%;
+    overflow: hidden;
+    transition: .3s ease;
+    vertical-align: middle;
+
+}
+
+.dropdown2 img:hover {
+    transform: scale(1.1);
+}
+
+/* dropdown meu3 */
+.dropdown3 {
+    display: flex;
+    padding: 10px;
+    margin-bottom: 10px;    
+
+    width: 100%;
+    position: absolute;
+    border: 1px solid #0ef;
+    flex-wrap: wrap;
+    display: none;
+    animation:showmotion 1s ;
+}
+
+.dropdown3 .images {
+    width: calc(100%/4);
+    padding: 7px;
+    overflow: hidden;
+}
+
+.dropdown3 h1 {
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.dropdown3 span {
+    display: flex;
+    overflow: hidden;
+    border-radius: 5px;
+}
+
+.dropdown3 .images img {
+    width: 100%;
+    overflow: hidden;
+    transition: .3s ease;
+    vertical-align: middle;
+
+}
+
+.dropdown3 img:hover {
+    transform: scale(1.1);
+}
+
+.maintext {
+    text-align: center;
+    padding:100px;
+    font-size: 40px;
+    color:#0ef;
+    animation:autoshow .4s;
+}
+@keyframes autoshow {
+from{
+        transform: translateY(-140px) scale(4);
+    opacity: 0;
+}
+    to {
+        opacity: 1;
+        transform: translate(0px) scale(1);
+    }
+}
+
+@media (max-width:700px){
+    nav {
+    display: flex;
+    max-width: 700px;
+    margin: 10px;
+    flex-wrap: wrap;
+    padding: 5px;
+    justify-content: center;
+}
+nav li a {
+    text-decoration: none;
+    color: #0ef;
+    font-size: 12px;
+    font-weight: bold;
+    border: 1px solid #0ef;
+    border-radius: 50px;
+    padding: 5px;
+    margin: 5px;
+    transition: all .3s ease;
+}
+nav li {
+    list-style-type: none;
+    padding: 5px;
+}
+
+.dropdown{
+    flex-direction: column;
+    
+}
+.dropdown .images {
+    width:100%;
+}
+.dropdown1{
+    flex-direction: column;
+}
+.dropdown1 .images {
+    width:100%;
+}
+.dropdown2{
+    flex-direction: column;
+}
+.dropdown2 .images {
+    width:100%;
+}
+.dropdown3{
+    flex-direction: column;
+}
+.dropdown3 .images {
+    width:100%;
+}
+
+.maintext{
+    font-size: 12px;
+}
+nav a{
+    padding:5px
+}
+
+}
+@keyframes showmotion {
+from{
+        transform: scale(0.3);
+    opacity: 0;
+}
+    to {
+        opacity: 1;
+        transform: translate(0px) scale(1);
+    }
+}
+
+
+        </style>
+</head>
+
+<body>
+
+    <nav>
+        <a href="/main.html#facility"><i class="fas fa-home"></i></a>
+        <li><a href="#" onclick="showme1()" class="active">همه</a></li>
+        <li><a href="#" onclick="showme2()">اساتید و شاگردان</a></li>
+        <li><a href="#" onclick="showme3()">معلمان و مدیر</a></li>
+        <li><a href="#" onclick="showme4()"> ساختمان و امکانات</a></li>
+        <li><a href="#" onclick="showme5()">برنامه های فرهنگی</a></li>
+        <li><a href="#" onclick="closeall()"> بستن همه</a></li>
+    </nav>
+    <!--  parties photos-->
+    <div class="dropdown" id="PYme">
+        <div class="images"><span><img src="/facily (1).jpg" alt=""></span>
+            <h1>محفل های ما</h1>
+        </div>
+        <div class="images"><span><img src="/facily (1).jpg" alt=""></span>
+            <h1>محفل های ما</h1>
+        </div>
+        <div class="images"><span><img src="/facily (1).jpg" alt=""></span>
+            <h1>محفل های ما</h1>
+        </div>
+        <div class="images"><span><img src="/facily (1).jpg" alt=""></span>
+            <h1>محفل های ما</h1>
+        </div>
+        <div class="images"><span><img src="/facily (1).jpg" alt=""></span>
+            <h1>محفل های ما</h1>
+        </div>
+
+    </div>
+    <!-- student photo -->
+    <div class="dropdown1" id="ST">
+        <div class="images"><span><img src="/facily (1).jpg" alt=""></span>
+            <h1>شاگردان ما</h1>
+        </div>
+        <div class="images"><span><img src="/facily (1).jpg" alt=""></span>
+            <h1>شاگردان ما</h1>
+        </div>
+        <div class="images"><span><img src="/facily (1).jpg" alt=""></span>
+            <h1>شاگردان ما</h1>
+        </div>
+        <div class="images"><span><img src="/facily (1).jpg" alt=""></span>
+            <h1>شاگردان ما</h1>
+        </div>
+        <div class="images"><span><img src="/facily (1).jpg" alt=""></span>
+            <h1>شاگردان ما</h1>
+        </div>
+
+    </div>
+
+    <!-- teachers and mangers photo -->
+    <div class="dropdown2" id="TM">
+        <div class="images"><span><img src="/facily (1).jpg" alt=""></span>
+            <h1>اساتید و مدیر ما</h1>
+        </div>
+        <div class="images"><span><img src="/facily (1).jpg" alt=""></span>
+            <h1>اساتید و مدیر ما</h1>
+        </div>
+        <div class="images"><span><img src="/facily (1).jpg" alt=""></span>
+            <h1>اساتید و مدیر ما</h1>
+        </div>
+        <div class="images"><span><img src="/facily (1).jpg" alt=""></span>
+            <h1>اساتید و مدیر ما</h1>
+        </div>
+        <div class="images"><span><img src="/facily (1).jpg" alt=""></span>
+            <h1>اساتید و مدیر ما</h1>
+        </div>
+
+    </div>
+
+    <!-- facility and bulding photo -->
+    <div class="dropdown3" id="FB">
+        <div class="images"><span><img src="/facily (1).jpg" alt=""></span>
+            <h1>ساختمان و امکانات ما</h1>
+        </div>
+        <div class="images"><span><img src="/facily (1).jpg" alt=""></span>
+            <h1>ساختمان و امکانات ما</h1>
+        </div>
+        <div class="images"><span><img src="/facily (1).jpg" alt=""></span>
+            <h1>ساختمان و امکانات ما</h1>
+        </div>
+        <div class="images"><span><img src="/facily (1).jpg" alt=""></span>
+            <h1>ساختمان و امکانات ما</h1>
+        </div>
+        <div class="images"><span><img src="/facily (1).jpg" alt=""></span>
+            <h1>ساختمان و امکانات ما</h1>
+        </div>
+
+
+    </div>
+
+
+
+    <div class="maintext" id="maintext">
+        <h1>به گالری عمومی مکتب خصوصی نورا خوش آمدید</h1>
+
+    </div>
+
+
+    <script>
+        const minitext =document.getElementById('maintext')
+        const showme = document.getElementById("PYme");
+        function showme1() {
+            showme.style.display = "flex";
+            showme.style.position = 'static';
+            showm.style.display = 'flex';
+            showm.style.position = 'static';
+            show.style.display = 'flex';
+            show.style.position = 'static';
+            sho.style.display = 'flex';
+            sho.style.position = 'static';
+            sh.style.display = 'flex';
+            sh.style.position = 'static';
+            minitext.style.display ='none'
+
+        }
+        const showm = document.getElementById("PYme");
+        function showme5() {
+            showm.style.display = "flex";
+            showme.style.display = "flex";
+            show.style.display = 'none';
+            sho.style.display = 'none';
+            sh.style.display = 'none';
+            minitext.style.display ='none'
+        }
+        const show = document.getElementById("ST");
+        function showme3() {
+            show.style.display = "flex";
+            showm.style.display = "none";
+            showme.style.display = "none";
+            sho.style.display = 'none';
+            sh.style.display = 'none';
+            minitext.style.display ='none'
+        }
+        const sho = document.getElementById("TM");
+        function showme2() {
+            sho.style.display = "flex";
+            showm.style.display = "none";
+            showme.style.display = "none";
+            show.style.display = 'none';
+            sh.style.display = 'none';
+            minitext.style.display ='none'
+        }
+        const sh = document.getElementById("FB");
+        function showme4() {
+            sh.style.display = "flex";
+            showm.style.display = "none";
+            showme.style.display = "none";
+            show.style.display = 'none';
+            sho.style.display = 'none';
+            minitext.style.display ='none'
+
+        }
+
+           const s = document.getElementById("FB");
+        function closeall() {
+            sh.style.display = "none";
+            showm.style.display = "none";
+            showme.style.display = "none";
+            show.style.display = 'none';
+            sho.style.display = 'none';
+            minitext.style.display ='block'
+
+        }
+
+
+    </script>
+
+</body>
+
+</html>
