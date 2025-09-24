@@ -1,0 +1,542 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NouraPlans.com</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+        integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+        <style>
+            *{
+    padding:0;
+    margin:0;
+}
+body{
+    background-color: rgb(189, 247, 238);
+    animation: autoshow .6s;
+}
+@keyframes autoshow {
+from{
+        transform: translateY(100px) ;
+    opacity: 0;
+}
+    to {
+        opacity: 1;
+        transform: translate(0px) scale(1);
+    }
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    background-color:#0ef;
+}
+section{
+    display: flex;
+    justify-content: space-between;
+    padding:30px;
+}
+body h1{
+    text-align: center;
+    padding:20px;
+}
+.maincontent{
+    border:1px solid black;
+    border-radius: 5px;
+    flex-basis: 31%;
+    padding:10px;
+    min-height:70vh;
+}
+.maincontent h1{
+    margin-bottom: 15px;
+    text-align: center;
+}
+.row .class{    
+    display: flex;
+    justify-content: space-between;
+    padding:10px 12px;
+    border-radius: 5px;
+    border:1px solid white;
+    background-color: #0ef;
+    cursor: pointer;
+}
+.row .class a{
+    text-decoration: none;
+    color:black;
+    font-weight: bold;
+}
+.title{
+    width:100%;
+}
+
+
+
+
+
+.content{
+    padding:10px;
+    border:1px solid white;
+    border-top: none;
+    margin-top:5px;
+    height:0;
+    justify-content: right;
+    transition: all ease 1s;
+    display: none;
+    animation: autoshow1 0.3s;
+}
+@keyframes autoshow1 {
+from{
+        transform: translateY(-40px) ;
+    opacity: 0;
+}
+    to {
+        opacity: 1;
+        transform: translate(0px) scale(1);
+    }
+}
+.content div{
+    padding:10px;
+    cursor: pointer;
+    text-align: center;
+}
+
+@media (max-width:990px){
+    section{
+        flex-direction: column;
+    }
+    .maincontent{
+        margin:10px;
+    }
+}
+
+        </style>
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="navlinks">
+            <ul>
+                <li><a href="/main.html#learna">بازگشت</a></li>
+            </ul>
+        </div>
+        <img src="" alt="logo">
+    </nav>
+    <!-- body section -->
+    <h1>خدمات آموزشی ما </h1>
+    <section>
+        <!-- 1-6 classes -->
+        <div class="maincontent">
+            <h1>صنوف ابتدایی</h1>
+             <div class="row">
+                <div class="class" onclick="showme0()"><a href="#">صنف امادگی</a><i class="fas fa-chevron-down"></i></div>
+                <div class="content" id="zero">
+                    <img src="" alt="logo">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, harum neque optio earum
+                        debitis voluptatibus natus nihil aperiam nemo sint voluptatem rem architecto ipsa voluptate sit
+                        assumenda quae illum nam.</p>
+                    <div><i class="fas fa-chevron-up" onclick="hideme0()"></i></div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="class" onclick="showme()"><a href="#">صنف اول</a><i class="fas fa-chevron-down"></i></div>
+                <div class="content" id="one">
+                    <img src="" alt="logo">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, harum neque optio earum
+                        debitis voluptatibus natus nihil aperiam nemo sint voluptatem rem architecto ipsa voluptate sit
+                        assumenda quae illum nam.</p>
+                    <div><i class="fas fa-chevron-up" onclick="hideme()"></i></div>
+                </div>
+            </div>
+            <!-- two -->
+            <div class="row">
+                <div class="class" onclick="showme1()"><a href="#">صنف دوم</a><i class="fas fa-chevron-down"></i></div>
+                <div class="content" id="two">
+                    <img src="" alt="logo">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, harum neque optio earum
+                        debitis voluptatibus natus nihil aperiam nemo sint voluptatem rem architecto ipsa voluptate sit
+                        assumenda quae illum nam.</p>
+                    <div><i class="fas fa-chevron-up" onclick="hideme1()"></i></div>
+                </div>
+            </div>
+            <!-- three -->
+            <div class="row">
+                <div class="class" onclick="showme2()"><a href="#">صنف سوم</a><i class="fas fa-chevron-down"></i></div>
+                <div class="content" id="three">
+                    <img src="" alt="logo">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, harum neque optio earum
+                        debitis voluptatibus natus nihil aperiam nemo sint voluptatem rem architecto ipsa voluptate sit
+                        assumenda quae illum nam.</p>
+                    <div><i class="fas fa-chevron-up" onclick="hideme2()"></i></div>
+                </div>
+            </div>
+            <!-- four -->
+            <div class="row">
+                <div class="class" onclick="showme3()"><a href="#">صنف چهارم</a><i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="content" id="four">
+                    <img src="" alt="logo">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, harum neque optio earum
+                        debitis voluptatibus natus nihil aperiam nemo sint voluptatem rem architecto ipsa voluptate sit
+                        assumenda quae illum nam.</p>
+                    <div><i class="fas fa-chevron-up" onclick="hideme3()"></i></div>
+                </div>
+            </div>
+            <!-- five -->
+            <div class="row">
+                <div class="class" onclick="showme4()"><a href="#">صنف پنجم</a><i class="fas fa-chevron-down"></i></div>
+                <div class="content" id="five">
+                    <img src="" alt="logo">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, harum neque optio earum
+                        debitis voluptatibus natus nihil aperiam nemo sint voluptatem rem architecto ipsa voluptate sit
+                        assumenda quae illum nam.</p>
+                    <div><i class="fas fa-chevron-up" onclick="hideme4()"></i></div>
+                </div>
+            </div>
+            <!-- six -->
+            <div class="row">
+                <div class="class" onclick="showme5()"><a href="#">صنف ششم</a><i class="fas fa-chevron-down"></i></div>
+                <div class="content" id="six">
+                    <img src="" alt="logo">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, harum neque optio earum
+                        debitis voluptatibus natus nihil aperiam nemo sint voluptatem rem architecto ipsa voluptate sit
+                        assumenda quae illum nam.</p>
+                    <div><i class="fas fa-chevron-up" onclick="hideme5()"></i></div>
+                </div>
+            </div>
+
+        </div>
+        <!-- 7-9 classes -->
+        <div class="maincontent">
+            <h1>صنوف متوسظه</h1>
+            <div class="row">
+                <div class="class" onclick="showDiv()"><a href="#">صنف هفتم</a><i class="fas fa-chevron-down"></i></div>
+                <div class="content" id="Midone">
+                    <img src="" alt="logo">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, harum neque optio earum
+                        debitis voluptatibus natus nihil aperiam nemo sint voluptatem rem architecto ipsa voluptate sit
+                        assumenda quae illum nam.</p>
+                    <div><i class="fas fa-chevron-up" onclick="hideDiv()"></i></div>
+                </div>
+            </div>
+            <!-- two -->
+            <div class="row">
+                <div class="class" onclick="showDiv1()"><a href="#">صنف هشتم</a><i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="content" id="Midtwo">
+                    <img src="" alt="logo">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, harum neque optio earum
+                        debitis voluptatibus natus nihil aperiam nemo sint voluptatem rem architecto ipsa voluptate sit
+                        assumenda quae illum nam.</p>
+                    <div><i class="fas fa-chevron-up" onclick="hideDiv1()"></i></div>
+                </div>
+            </div>
+            <!-- three -->
+            <div class="row">
+                <div class="class" onclick="showDiv3()"><a href="#">صنف نهم</a><i class="fas fa-chevron-down"></i></div>
+                <div class="content" id="Midthree">
+                    <img src="" alt="logo">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, harum neque optio earum
+                        debitis voluptatibus natus nihil aperiam nemo sint voluptatem rem architecto ipsa voluptate sit
+                        assumenda quae illum nam.</p>
+                    <div><i class="fas fa-chevron-up" onclick="hideDiv3()"></i></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- course -->
+        <div class="maincontent">
+            <h1>صنوف آموزشکاه</h1>
+            <div class="row">
+                <div class="class" onclick="see()"><a href="#">زبان انگلیسی</a><i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="content" id="helloOne">
+                    <img src="" alt="logo">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, harum neque optio earum
+                        debitis voluptatibus natus nihil aperiam nemo sint voluptatem rem architecto ipsa voluptate sit
+                        assumenda quae illum nam.</p>
+                    <div><i class="fas fa-chevron-up" onclick="hide()"></i></div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="class" onclick="see1()"><a href="#">زبان انگلیسی</a><i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="content" id="hellotwo">
+                    <img src="" alt="logo">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, harum neque optio earum
+                        debitis voluptatibus natus nihil aperiam nemo sint voluptatem rem architecto ipsa voluptate sit
+                        assumenda quae illum nam.</p>
+                    <div><i class="fas fa-chevron-up" onclick="hide1()"></i></div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="class" onclick="see2()"><a href="#">زبان انگلیسی</a><i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="content" id="hellothree">
+                    <img src="" alt="logo">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, harum neque optio earum
+                        debitis voluptatibus natus nihil aperiam nemo sint voluptatem rem architecto ipsa voluptate sit
+                        assumenda quae illum nam.</p>
+                    <div><i class="fas fa-chevron-up" onclick="hide2()"></i></div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="class" onclick="see3()"><a href="#">زبان انگلیسی</a><i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="content" id="hellofour">
+                    <img src="" alt="logo">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, harum neque optio earum
+                        debitis voluptatibus natus nihil aperiam nemo sint voluptatem rem architecto ipsa voluptate sit
+                        assumenda quae illum nam.</p>
+                    <div><i class="fas fa-chevron-up" onclick="hide3()"></i></div>
+                </div>
+            </div>
+
+
+        </div>
+    </section>
+
+    <!-- primary classes -->
+    <script>
+
+          let DivHide0 = document.getElementById('zero');
+        function showme0() {
+            DivHide0.style.height = 'auto';
+            DivHide0.style.display ='block';
+            DivHide.style.display = 'none';
+            DivHide1.style.display = 'none';
+            DivHide2.style.display = 'none';
+            DivHide3.style.display = 'none';
+            DivHide4.style.display = 'none';
+            DivHide5.style.display = 'none';
+        }
+        function hideme0() {
+            DivHide0.style.display = 'none';
+            DivHide0.style.height = '0';
+
+
+        }
+
+
+        let DivHide = document.getElementById('one');
+        function showme() {
+            DivHide.style.height = 'auto';
+            DivHide.style.display = 'block';
+            DivHide1.style.display = 'none';
+            DivHide2.style.display = 'none';
+            DivHide3.style.display = 'none';
+            DivHide4.style.display = 'none';
+            DivHide5.style.display = 'none';
+                   DivHide0.style.display ='none';
+        }
+        function hideme() {
+            DivHide.style.display = 'none';
+            DivHide.style.height = '0';
+
+
+        }
+
+        let DivHide1 = document.getElementById('two');
+        function showme1() {
+            DivHide1.style.display = 'block';
+            DivHide.style.display = 'none';
+            DivHide2.style.display = 'none';
+            DivHide3.style.display = 'none';
+            DivHide4.style.display = 'none';
+            DivHide5.style.display = 'none';
+            DivHide1.style.height = 'auto';
+                   DivHide0.style.display ='none';
+        }
+        function hideme1() {
+            DivHide1.style.display = 'none';
+            DivHide1.style.height = '0';
+
+        }
+
+        let DivHide2 = document.getElementById('three');
+        function showme2() {
+            DivHide2.style.display = 'block';
+            DivHide.style.display = 'none';
+            DivHide1.style.display = 'none';
+            DivHide3.style.display = 'none';
+            DivHide4.style.display = 'none';
+            DivHide5.style.display = 'none';
+            DivHide2.style.height = 'auto';
+                   DivHide0.style.display ='none';
+        }
+        function hideme2() {
+            DivHide2.style.display = 'none';
+            DivHide2.style.height = '0';
+
+        }
+
+        let DivHide3 = document.getElementById('four');
+        function showme3() {
+            DivHide3.style.display = 'block';
+            DivHide.style.display = 'none';
+            DivHide1.style.display = 'none';
+            DivHide2.style.display = 'none';
+            DivHide4.style.display = 'none';
+            DivHide5.style.display = 'none';
+            DivHide2.style.height = 'auto';
+            DivHide3.style.height = 'auto';
+                   DivHide0.style.display ='none';
+        }
+        function hideme3() {
+            DivHide3.style.display = 'none';
+            DivHide3.style.height = '0';
+
+        }
+
+        let DivHide4 = document.getElementById('five');
+        function showme4() {
+            DivHide4.style.display = 'block';
+            DivHide.style.display = 'none';
+            DivHide1.style.display = 'none';
+            DivHide2.style.display = 'none';
+            DivHide3.style.display = 'none';
+            DivHide5.style.display = 'none';
+            DivHide2.style.height = 'auto';
+            DivHide4.style.height = 'auto';
+                   DivHide0.style.display ='none';
+        }
+        function hideme4() {
+            DivHide4.style.display = 'none';
+            DivHide4.style.height = '0';
+
+        }
+
+        let DivHide5 = document.getElementById('six');
+        function showme5() {
+            DivHide5.style.display = 'block';
+            DivHide.style.display = 'none';
+            DivHide1.style.display = 'none';
+            DivHide2.style.display = 'none';
+            DivHide3.style.display = 'none';
+            DivHide4.style.display = 'none';
+            DivHide2.style.height = 'auto';
+            DivHide5.style.height = 'auto';
+                   DivHide0.style.display ='none';
+        }
+        function hideme5() {
+            DivHide5.style.display = 'none';
+            DivHide5.style.height = '0';
+
+        }
+
+
+    </script>
+
+    <!-- secondary classes -->
+    <script>
+        const HiOne = document.getElementById('Midone');
+        function showDiv() {
+            HiOne.style.display = 'block';
+            Hitwo.style.display = 'none';
+            Hithree.style.display = 'none';
+            HiOne.style.height = 'auto';
+        }
+        function hideDiv() {
+            HiOne.style.display = 'none';
+            HiOne.style.height = '0';
+        }
+
+        const Hitwo = document.getElementById('Midtwo');
+        function showDiv1() {
+            Hitwo.style.display = 'block';
+            HiOne.style.display = 'none';
+            Hithree.style.display = 'none';
+            Hitwo.style.height = 'auto';
+        }
+        function hideDiv1() {
+            Hitwo.style.height = '0';
+            Hitwo.style.display = 'none';
+        }
+
+        const Hithree = document.getElementById('Midthree');
+        function showDiv3() {
+            Hithree.style.display = 'block';
+            Hitwo.style.display = 'none';
+            HiOne.style.display = 'none';
+            Hithree.style.height = 'auto';
+        }
+        function hideDiv3() {
+            Hithree.style.height = '0';
+            Hithree.style.display = 'none';
+        }
+
+
+
+    </script>
+
+    <!-- cours calses -->
+    <script>
+        const seeme = document.getElementById('helloOne');
+        function see() {
+            seeme.style.display = 'block';
+            seeme1.style.display = 'none';
+            seeme2.style.display = 'none';
+            seeme3.style.display = 'none';
+            seeme.style.height = 'auto';
+        }
+        function hide() {
+            seeme.style.display = 'none';
+            seeme.style.height = '0';
+        }
+
+        const seeme1 = document.getElementById('hellotwo');
+        function see1() {
+            seeme1.style.display = 'block';
+            seeme2.style.display = 'none';
+            seeme3.style.display = 'none';
+            seeme.style.display = 'none';
+
+            seeme1.style.height = 'auto';
+        }
+        function hide1() {
+            seeme1.style.display = 'none';
+            seeme1.style.height = '0';
+        }
+
+        const seeme2 = document.getElementById('hellothree');
+        function see2() {
+            seeme2.style.display = 'block';
+            seeme1.style.display = 'none';
+            seeme3.style.display ='none';
+            seeme.style.display = 'none';
+
+            seeme2.style.height = 'auto';
+        }
+        function hide2() {
+            seeme2.style.display = 'none';
+            seeme2.style.height = '0';
+        }
+
+        const seeme3 = document.getElementById('hellofour');
+        function see3() {
+            seeme3.style.display = 'block';
+             seeme1.style.display = 'none';
+            seeme2.style.display ='none';
+            seeme.style.display = 'none';
+
+            seeme3.style.height = 'auto';
+        }
+        function hide3() {
+            seeme3.style.display = 'none';
+            seeme3.style.height = '0';
+        }
+
+
+
+
+    </script>
+
+</body>
+
+</html>
