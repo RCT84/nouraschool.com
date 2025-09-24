@@ -1,0 +1,1003 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>aboutNoura.com</title>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+    integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <style>
+      * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+::-webkit-scrollbar{
+    display: NONE;
+}
+
+body {
+    background-color: rgb(216, 165, 70);
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: black;
+    color: white;
+    height: auto;
+}
+
+.navbar img {
+    width: 40px;
+    height: 40px;
+}
+
+.navlinks {
+    padding: 10px;
+}
+
+.navlinks ul li {
+    display: inline;
+    list-style-type: none;
+}
+
+.navlinks ul li a {
+    text-decoration: none;
+    color: white;
+    ;
+    padding: 5px;
+}
+
+.navbar .fas {
+    display: none;
+}
+
+/* text-box */
+.text-box {
+    text-align: center;
+    width: 100%;
+}
+
+.text-box h1 {
+    margin-top: 20px;
+    font-size: 50px;
+}
+
+.container {
+    border-radius: 5px;
+    margin-top: 30px;
+    padding: 5px;
+}
+
+.btn {
+    padding: 10px;
+
+}
+
+.btn a {
+    padding: 10px;
+    border: 1px solid black;
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: all .3s;
+}
+
+.btn a:hover {
+    transform: scale(1.1);
+    font-size: 18px;
+}
+
+/* first */
+.mainContent1 {
+    border: 1px solid black;
+    padding: 10px;
+    margin-left: 5px;
+    margin-top: 10px;
+    min-height: 400px;
+    display: flex;
+    position: absolute;
+    background-color: rgb(228, 186, 141);
+    display: none;
+    transition: all 1s ease-in;
+    animation: autoshow 1s ease;
+
+}
+
+@keyframes autoshow {
+from{
+        transform: translateY(100px) ;
+    opacity: 0;
+}
+    to {
+        opacity: 1;
+        transform: translate(0px) scale(1);
+    }
+}
+
+.mainContent1 div .fas {
+    width: 400px;
+    text-align: right;
+    padding: 10px;
+    font-weight: bold;
+    cursor: pointer;
+    color: red;
+}
+
+.mainContent1 img {
+    border-radius: 5px;
+    width: 400px;
+}
+
+.mainContent1 p {
+    padding: 10px;
+    text-align: right;
+    font-size: 18px;
+    justify-content: center;
+    line-height: 1.5;
+    margin: 5px;
+}
+
+.mainContent1 span {
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+    padding: 10px;
+}
+
+/* second */
+.mainContent2 {
+    border: 1px solid black;
+    padding: 10px;
+    margin-left: 5px;
+    margin-top: 10px;
+    min-height: 490px;
+    display: flex;
+    position: absolute;
+    background-color: rgb(228, 186, 141);
+    display: none;
+        animation: autoshow 1s ease;
+}
+
+.mainContent2 div .fas {
+    width: 400px;
+    text-align: right;
+    padding: 10px;
+    font-weight: bold;
+    color: red;
+}
+
+.mainContent2 img {
+    border-radius: 5px;
+    width: 400px;
+}
+
+.mainContent2 p {
+    padding: 10px;
+    text-align: right;
+    font-size: 18px;
+    justify-content: center;
+    line-height: 1.5;
+    margin: 5px;
+}
+
+.mainContent2 span {
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+    padding: 10px;
+}
+
+/* second */
+.mainContent3 {
+    border: 1px solid black;
+    padding: 10px;
+    margin-left: 5px;
+    margin-top: 10px;
+    min-height: 490px;
+    display: flex;
+    position: absolute;
+    background-color: rgb(228, 186, 141);
+    display: none;
+        animation: autoshow 1s ease;
+}
+
+.mainContent3 div .fas {
+    width: 400px;
+    text-align: right;
+    padding: 10px;
+    font-weight: bold;
+    color: red;
+}
+
+.mainContent3 img {
+    border-radius: 5px;
+    width: 400px;
+}
+
+.mainContent3 p {
+    padding: 10px;
+    text-align: right;
+    font-size: 18px;
+    justify-content: center;
+    line-height: 1.5;
+    margin: 5px;
+}
+
+.mainContent3 span {
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+    padding: 10px;
+}
+
+/* third */
+.mainContent4 {
+    border: 1px solid black;
+    padding: 10px;
+    margin-left: 5px;
+    margin-top: 10px;
+    min-height: 490px;
+    display: flex;
+    position: absolute;
+    background-color: rgb(228, 186, 141);
+    display: none;
+        animation: autoshow 1s ease;
+}
+
+.mainContent4 div .fas {
+    width: 400px;
+    text-align: right;
+    padding: 10px;
+    font-weight: bold;
+    color: red;
+}
+
+.mainContent4 img {
+    border-radius: 5px;
+    width: 400px;
+}
+
+.mainContent4 p {
+    padding: 10px;
+    text-align: right;
+    font-size: 18px;
+    justify-content: center;
+    line-height: 1.5;
+    margin: 5px;
+}
+
+.mainContent4 span {
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+    padding: 10px;
+}
+
+/* fourth */
+.mainContent5 {
+    border: 1px solid black;
+    padding: 10px;
+    margin-left: 5px;
+    margin-top: 10px;
+    min-height: 490px;
+    display: flex;
+    position: absolute;
+    background-color: rgb(228, 186, 141);
+    display: none;
+        animation: autoshow 1s ease;
+}
+
+.mainContent5 div .fas {
+    width: 400px;
+    text-align: right;
+    padding: 10px;
+    font-weight: bold;
+    color: red;
+}
+
+.mainContent5 img {
+    border-radius: 5px;
+    width: 400px;
+}
+
+.mainContent5 p {
+    padding: 10px;
+    text-align: right;
+    font-size: 18px;
+    justify-content: center;
+    line-height: 1.5;
+    margin: 5px;
+}
+
+.mainContent5 span {
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+    padding: 10px;
+}
+
+/* fifth */
+.mainContent6 {
+    border: 1px solid black;
+    padding: 10px;
+    margin-left: 5px;
+    margin-top: 10px;
+    min-height: 490px;
+    display: flex;
+    position: absolute;
+    background-color: rgb(228, 186, 141);
+    display: none;
+        animation: autoshow 1s ease;
+}
+
+.mainContent6 div .fas {
+    width: 400px;
+    text-align: right;
+    padding: 10px;
+    font-weight: bold;
+    color: red;
+}
+
+.mainContent6 img {
+    border-radius: 5px;
+    width: 400px;
+}
+
+.mainContent6 p {
+    padding: 10px;
+    text-align: right;
+    font-size: 18px;
+    justify-content: center;
+    line-height: 1.5;
+    margin: 5px;
+}
+
+.mainContent6 span {
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+    padding: 10px;
+}
+
+/* six */
+.mainContent7 {
+    border: 1px solid black;
+    padding: 10px;
+    margin-left: 5px;
+    margin-top: 10px;
+    min-height: 490px;
+    display: flex;
+    position: absolute;
+    background-color: rgb(228, 186, 141);
+    display: none;
+        animation: autoshow 1s ease;
+}
+
+.mainContent7 div .fas {
+    width: 400px;
+    text-align: right;
+    padding: 10px;
+    font-weight: bold;
+    color: red;
+}
+
+.mainContent7 img {
+    border-radius: 5px;
+    width: 400px;
+}
+
+.mainContent7 p {
+    padding: 10px;
+    text-align: right;
+    font-size: 18px;
+    justify-content: center;
+    line-height: 1.5;
+    margin: 5px;
+}
+
+.mainContent7 span {
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+    padding: 10px;
+}
+
+/* seven */
+.mainContent8 {
+    border: 1px solid black;
+    padding: 10px;
+    margin-left: 5px;
+    margin-top: 10px;
+    min-height: 490px;
+    display: flex;
+    position: absolute;
+    background-color: rgb(228, 186, 141);
+    display: none;
+        animation: autoshow 1s ease;
+}
+
+.mainContent8 div .fas {
+    width: 400px;
+    text-align: right;
+    padding: 10px;
+    font-weight: bold;
+    color: red;
+}
+
+.mainContent8 img {
+    border-radius: 5px;
+    width: 400px;
+}
+
+.mainContent8 p {
+    padding: 10px;
+    text-align: right;
+    font-size: 18px;
+    justify-content: center;
+    line-height: 1.5;
+    margin: 5px;
+}
+
+.mainContent8 span {
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+    padding: 10px;
+}
+
+/* eight */
+.mainContent9 {
+    border: 1px solid black;
+    padding: 10px;
+    margin-left: 5px;
+    margin-top: 10px;
+    min-height: 490px;
+    display: flex;
+    position: absolute;
+    background-color: rgb(228, 186, 141);
+    display: none;
+        animation: autoshow 1s ease;
+}
+
+.mainContent9 div .fas {
+    width: 400px;
+    text-align: right;
+    padding: 10px;
+    font-weight: bold;
+    color: red;
+}
+
+.mainContent9 img {
+    border-radius: 5px;
+    width: 400px;
+}
+
+.mainContent9 p {
+    padding: 10px;
+    text-align: right;
+    font-size: 18px;
+    justify-content: center;
+    line-height: 1.5;
+    margin: 5px;
+}
+
+.mainContent9 span {
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+    padding: 10px;
+}
+
+/* nine */
+
+/* responsive */
+
+@media(max-width:990px) {
+    .navlinks {
+        display: none;
+    }
+
+    .navbar .fas {
+        padding: 10px;
+        cursor: pointer;
+        color: white;
+        display: block;
+    }
+
+    .navbar {
+        width: 100%;
+    }
+
+    .text-box h1 {
+        font-size: 20px;
+    }
+
+    .btn a {
+        padding: 5px;
+        border: 1px solid black;
+        color: black;
+        text-decoration: none;
+        cursor: pointer;
+        font-size: 12px;
+        border-radius: 5px;
+        transition: all .3s;
+        justify-content: space-around;
+        display: inline-block;
+        margin: 10px;
+    }
+
+    .btn a:hover {
+        transform: scale(1.1);
+        font-size: 15px;
+    }
+
+    /* first open box */
+    .mainContent1,
+    .mainContent2,
+    .mainContent3,
+    .mainContent4,
+    .mainContent5,
+    .mainContent6,
+    .mainContent7,
+    .mainContent8,
+    .mainContent9 {
+        border: 1px solid black;
+        padding: 10px;
+        margin-left: 5px;
+        margin-top: 10px;
+        min-height: 400px;
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        background-color: rgb(228, 186, 141);
+        display: none;
+        transition: all 1s ease-in;
+    }
+
+}
+    </style>
+</head>
+
+<body>
+  <nav class="navbar">
+
+
+    <div class="navlinks">
+      <ul>
+        <li><a href="/main.html#about">بازگشت</a></li>
+      </ul>
+    </div>
+    <i class="fas fa-bars"></i>
+    <img src="logo.png" alt="">
+  </nav class="hi">
+
+  <!-- first body section -->
+  <nav class="text-box">
+    <h1>سلام به همه شما عزیزان</h1>
+    <div class="container">
+      <div class="btn">
+        <a href="#" onclick="show0()">ماموریت</a>
+        <a href="#" onclick="show1()">مبنای فلسفی</a>
+        <a href="#" onclick="show2()">ادامه...</a>
+        <a href="#" onclick="show3()">اهداف تعلیم و تربیت</a>
+        <a href="#" onclick="show4()">روش های تعلیم و تربیت</a>
+        <a href="#" onclick="show5()">برنامه های آموزشی</a>
+        <a href="#" onclick="show6()">مبنای یادگیری</a>
+        <a href="#" onclick="show7()">پیش فرض</a>
+        <a href="#" onclick="show8()">ماموریت کلی</a>
+      </div>
+      <!-- first topic -->
+      <div class="mainContent1" id="first">
+        <div>
+          <i class="fas fa-x" onclick="hide0()"></i>
+          <img src="facily (1).jpg" alt="">
+          <div class="layer"></div>
+        </div>
+        <p> <span>ماموریت</span><br>مکتب خصوصی نورا یک مکتب موفق و نوآور خواهد بود و حرکتی همگام با مکاتبی است که درزمینه
+          آموزش و پرورش مسیر معیاری و پیشرو را انتخاب کرده است. تا هنوز ازنظرکیفیت خدمات آموزشی و پرورشی توانسته‌ایم
+          رضایت خاطر اولیاء و دانش آموزان را نسبتا تأمین نماییم.
+          تلاش صورت می‌گیرد تا فضای خلاقیت و ابتکار، رشد نماید. روابط نیکو و صادقانه با مردم داریم و پایبند اصول اخلاقی
+          می‌باشیم و به مردم اهمیت می‌دهیم. شخصیت کارمندان و معلمان پا به پای مکتب رشد می‌کند.
+          زندگی و کار در نورا پرجاذبه، پرهیجان و به اصطلاح چالشگراست؛ نیروی کاری درمکتب برای یکدیگر احترام متقابل قائل
+          هستند. در جوی آکنده از دوستی و صمیمیت کار می‌کنند. از نظراجتماعی احساس مسئولیت می‌کنیم و برای بهبود وضع علمی و
+          فرهنگی جامعه از هیچ کوششی فروگذارنمی‌کنیم.
+
+        </p>
+      </div>
+      <!-- second topic -->
+      <div class="mainContent2" id="Two">
+        <div>
+          <i class="fas fa-x" onclick="hide1()"></i>
+          <img src="facily (1).jpg" alt="">
+          <div class="layer"></div>
+        </div>
+        <p> <span>مبنای فلسفی</span><br>
+          کارآموزش و پرورش درهرجامعه نیازمندی مبنای محکم است. مبانی فلسفی متعدد نسبت به این فرایند به وجود آمده است.
+          گروه های که درامریادگیری و آموزش مبادرت می ورزند ناگزیر اند که دو راه را برگزینند؛ یکم، درصورتی که ظرفیت علمی
+          اجازه دهد تلفیق اندیشه های فلسفی دربخش آموزش و پرورش صورت خواهد گرفت. دوم، انتخاب یک اندیشه به حیث مبنای کار
+          درقاعده ی هرم و ازدیگراندیشه ها درصورت لزوم برای حمایت آن یکی استفاده می گردد.
+          درمکاتب شایستگان خرد و آسمان علم مبنای فلسفی کار آموزش و پرورش؛ مکتب بازسازی گراها درمحورتوجه قرارگرفته است.
+          این فلسفه به صورت عمده شامل دومقوله اساسی است: 1. جامعه انسانی نیازمند بازسازی و یا تغییرمداوم است. 2. این
+          تغییرات اجتماعی، هم بازسازی آموزش و پرورش را شامل می شود و هم کاربرد آموزش و پرورش را در امر بازسازی جامعه
+          برجسته می سازد. طرفداران این فلسفه مدافع طرزفکری اند که انسانها را برای ساختن زندگی بهتر تشویق می‌کند. وسعت
+          دید این فلسفه جهانی است و این نکته را مورد تأکید قرارمی دهد که همه شهروند یک جهانیم. درقبال سرنوشت نقطه نقطه‌ی
+          این جهان مسئولیت داریم.
+          فلسفه بازسازی در نظریات افلاطون، فلاسفه رواقی، مارکوس اورلیوس پادشاه و فیلسوف رومی« من یک شهروند جهانم نه یک
+          شهروند روم »، سن. آگوستن، مارکس و ... منعکس گردیده است. اما دونظریه پرداز مهم این فلسفه جورج.اس.کونتز و
+          تئودوربراملد هستند و نمایندگان چشم‌گیر این فلسفه محسوب می گردند.
+          کونتز در اثربزرگش به نام آیا مدارس شهامت ایجاد یک نظم اجتماعی را دارند؟ خاطرنشان می سازد که مربیان نسبت به
+          موقعیت حساس شان دربازسازی اجتماعی مسئولیت بس مهم دارند و ادای این مسئولیت به شکل اساسی باعث نجات یک جامعه می
+          گردد. مربیان درزندگی شان باید نقش اصلاحگران اجتماعی را بازی کنند نه اینکه درگوشه ی عزلت گزینند و به شکل انسان
+          منفعل کار آموزش و پرورش را انجام دهند. کونتز محدوده ی مسئولیت یک مربی را فراتر از حیاط مدرسه و صنف ترسیم می
+          کند. روی این نکته تأکید دارد که دربخش های مختلف زندگی اجتماعی مربی سهم و مسئولیت دارد حتی در تحولات سیاسی یک
+          جامعه. برداشت وی از تغییر این است که اصلاح واقعی باید کل فرهنگ را شامل شود.
+        </p>
+
+      </div>
+      <!-- third topci -->
+      <div class="mainContent3" id="Three">
+        <div>
+          <i class="fas fa-x" onclick="hide2()"></i>
+          <img src="facily (1).jpg" alt="">
+          <div class="layer"></div>
+        </div>
+        <p>
+          تئودوربراملد نظریه پرداز بانفوذ و کسی که نظریه بازسازی را به صورت یک فلسفه تعلیم و تربیتِ کاملا رشدیافته
+          درآورد، شناخته می شود. وی مؤلف کتابهای متعدد ازجمله: به سوی یک فلسفه بازسازی شده تعلیم و تربیت، تعلیم و تربیت
+          به عنوان یک قدرت، و الگوهای تعلیم و تربیت، است.
+          بازسازی گرایان مایلند به مسائل با دیدکل نگر بنگرند. آنها ازین نکته آگاه اند که مسائل باهم تداخل پیدامی کند و
+          برای حل یک مسئله ممکن است حتی مسائل جدیدی به وجود آید؛ بااین حال اذعان دارند که اگربتوان انسانها را ترغیب کرد
+          تا به مسائل با یک دید بازتربنگرند، شانس رفع مشکلات بسیارافزایش پیداخواهد کرد. آنها معتقدند که برنامه ریزان
+          مهندسی جزء به جز با وجودِ داشتن اهداف خوب، اغلب به جای حل مسأله، باآن کلنجارمی روند و حتی ناآگاهانه زمینه را
+          برای ایجاد مشکلات دیگرفراهم می سازند.
+          بازسازی گرایان به تفکرات آرمان گرایانه ی علاقه مندند که به نظرآنها درجهت ایجاد جهانِ ایده آل عاری ازگرسنگی،
+          درگیری و رفتارغیرانسانی قراردارد. آنها عقیده دارند که برنامه ریزی و تأمل درباره آینده، شیوه ی پسندیده برای
+          ایجاد جوامع جدید است. به نظرآنها این نوع تفکرباید درمدارس، یعنی جایی که معلمین می توانند دانش آموزان را به جهت
+          دهی آینده ترغیب نمایند، به وجود آید.
+          انجمن مطالعات انسانی، صندوق حقوقی جهانی و جامعه آینده جهان از جمله سازمانهای معتبری اند که درزمینه گرایشهای
+          آینده نگر می پردازند و با فعالیت های شان به نحوی بازسازی گرایان را مورد حمایت قرار می دهند.
+          درآخر اینکه بازسازی گرایان مربیان را درباره نقشی که درتعلیم و تربیت برعهده دارند، به تفکرمجدد واداشته است.
+          بازسازی گرایان، طلایه داران تلاشهایی هستند که اهل تعلیم و تربیت را به نیروی اجتماعی فعال تر تبدیل می کند. آنها
+          ازنقش مربیان به عنوان عوامل صف نخست تحول، دفاع نموده و تلاش کرده اند مدارس را به گونه ی تغییردهند که به ایجاد
+          جامعه ی نو و بهتر کمک کند.</p>
+      </div>
+
+      <!-- fourth topic -->
+      <div class="mainContent4" id="Four">
+        <div>
+          <i class="fas fa-x" onclick="hide3()"></i>
+          <img src="facily (1).jpg" alt="">
+          <div class="layer"></div>
+        </div>
+        <p>
+          <span>اهداف تعلیم و تربیت</span><br>
+          بازسازی گرایان برضرورت تحول اجتماعی تأکیددارند. شاید بتوان هدف اساسی را دراین پنداشت چنین بیان نمود: « ما به
+          تحول اجتماعی و فعالیت اجتماعی نیازمندیم.» «وحدت جهانی» ، «برادری» و «آزادی» سه ایده آلی قدرتمندی است که
+          بازسازی گرایان به آن عقیده دارند و علاقه مندند درمدارس و جامعه به انجام برسد. مدارس باید این ایده آلها را
+          ازطریق برنامه های درسی، اداری و فعالیتهای زیربنایی پرورش دهند. هرچند نمی توان انتظارداشت که خود به بازسازی
+          جامعه بپردازند، اما می توانند باپذیرش این ایده آلها الگوهایی برای سایر سازمانهای جامعه باشند.
+        </p>
+      </div>
+
+      <!-- fifth topic -->
+
+      <div class="mainContent5" id="Five">
+        <div>
+          <i class="fas fa-x" onclick="hide4()"></i>
+          <img src="facily (1).jpg" alt="">
+          <div class="layer"></div>
+        </div>
+        <p><span>
+            روش های تعلیم و تربیت</span><br>
+          بازسازی گرایان اغلب به روش های متداول و معمول تدریس انتقاد می کنند. آنها به این باورند که دراین روش ها معلمان
+          نقش توزیع کننده ی دانش و شاگردان نقش دریافت کنندگان منفعل را بازی می کنند. به صورت پنهانی امر توافق دانش
+          آموزان با الگوی ازپیش تعیین شده ی برای زندگی القاء می گردد. درقبال مواد آموزشی نیزمعلمان نقش مشاهده گر بی طرف
+          را بازی می کنند. که روی همرفته این وضعیت به سود زندگی اجتماعی نخواهد بود.
+          سوگیری تعلیم و تربیت باید درجهت تحریک تمایلات عمومی به فعال بودن، باشد. معلمان باید با انجام برنامه های آموزشی
+          فعال (شاگردان و کارهای اجتماعی)، از انفعال و ترسی که درزمینه کارکردن فعالانه برای ایجاد تحول گریبانگیرآنها شده
+          رهایی یابند. آنها باید تلاش خود را پیرامون مسائل اجتماعی دقیقی متمرکزکنند که معمولا درمتون درسی یا بحثهای کلی
+          و عمومی مدارس یافت نمی شود. یکی از تاکتیک های مفید می تواند تجزیه و تحلیل تبلیغات یا چیزی باشد که نیل پُستمن
+          آن را «تشخیص تقلب» می نامد. معلمان به جای این که ناظر منفعل دانش باشند، باید درقضاوت دقیق، تحلیل گر و ممیز
+          باشند. آنها باید این نوع رشد را دربخشی از شاگردان تشویق و ترغیب کنند. بااین شیوه، بازسازی گرایان با اجازه دادن
+          به شاگردان برعهده گرفتن زندگی عاقلانه اجتماعی، به رشد فرایندهای دموکراتیک درزمینه مسائل اجتماعی کمک می کنند.
+          شایدمهمترین نوع تعلیم و تربیت رشدتواناییهای تصمیم گیری شاگردان است، وبازسازی گرایان اظهارمی دارندکه این مهم
+          خارج ازفعالیتهای آموزشی و دموکراتیک نمی تواند انجام گیرد.
+
+        </p>
+      </div>
+
+      <!-- sixth topci -->
+      <div class="mainContent6" id="Six">
+        <div>
+          <i class="fas fa-x" onclick="hide5()"></i>
+          <img src="facily (1).jpg" alt="">
+          <div class="layer"></div>
+        </div>
+        <p>
+          <span>برنامۀ آموزشی و درسی</span><br>
+          بازسازی گرایان قبل ازهرچیزعلاقه مندند شاگردان تاحدممکن اطلاعات خودرا ازجامعه، یعنی جایی که در آن هم می توانند
+          یادبگیرند و هم آموخته های خودرا به کارگیرند، اتخاذکنند. یکی ازشیوه های سازماندهی برنامه آموزشی، اصلاح بخش
+          اساسی برنامه ای است که پیشرفت گرایان، درضمن آنچه براملد آن را برنامه آموزشی «چرخ» نام نهاده، ازآن حمایت کردند.
+          به گفته براملد ممکن است به نظرکسی قسمت اساسی چرخ، توپی آن، یعنی همان درون مایه اصلی برنامه مدرسه باشد. پره های
+          چرخ، مطالعاتی ازقبیل مکالمه گروهی، تجربه های میدانی، مطالعات فنی و محتوایی و مطالعات شغلی را ارائه می کند.
+          توپی و پره یکدیگر را حمایت می کند، حال آنکه طوقه ی چرخ به ترکیب کردن و متحد کردن نیروها می پردازد. هرچند هرسال
+          «چرخ» مخصوص خود را دارد، استمرارآن ازسالی به سال دیگربا کمک و نیرویی است که ازسال قبل به آن واردشده، و آن را
+          استحکام می بخشد. اگرچه هرسال با سال گذشته تفاوت دارد، اما ازسالهای گوناگون مسائل و راه حلهایی را نیز به جا می
+          گذارد و این حرکت به ترکیب جدیدی تبدیل می شود. به نظربراملد برنامه آموزشی بازسازی گرایان متمرکز و هم
+          غیرمتمرکزاست. ازاین زاویه که همه مردم جامعه را درتحصیلات مشترک سهیم می سازد، متمرکز است. و غیرمتمرکز، زیرا
+          ازمحیط مدرسه تا جامعه ای بزرگترگسترش پیدا می کند. لذا، به تناسب ارتباط پویا بین مدرسه و جامعه توانایی انتقال
+          فرهنگ را دارد.
+          بازسازی گرایان برنامه آموزشی «جهانی» وفراگیر را با تأکید برصداقت، برادری و عدالت ترجیح می دهند. به طور نمونه
+          مطالعات تاریخ جهان را موردتوجه قرار می دهد. سوگیری برنامه های آموزشی باید به سمتی باشد که درعمل شاگردان را به
+          انجام طرحهایی از قبیل جمع آوری سرمایه برای امور ارزشمند، آگاه کردن مردم ازمشکلات و مسائل اجتماعی، و استفاده
+          ازدرخواستها و اعتراضات مشغول کند.
+          دانش آموزان برعلاوه آشناشدن با فرهنگهای جهان باید آینده نگر نیز باشند. ضروری است که پیشنهادهای برای بهترشدن
+          آینده را موردمطالعه قرارداده و به برنامه ریزی فعالیتهای بپردازند که اهداف آینده را معین می کند. به قول آلوین
+          تافلر مدارس امروزی از زمان عقب بوده و دید درستی نسبت به آینده ندارد. مردم باید یادبگیرند که چگونه با آینده
+          مواجه شوند؛ درنتیجه، معلمان باید شاگردان را تشویق کنند تا با آگاهی نسبی ازمسائل همچون جمعیت، انرژی، حمل و نقل،
+          و مانند آن به برنامه ریزی برای جوامع آینده بپردازند.
+
+        </p>
+      </div>
+
+      <!-- seventh topic -->
+
+      <div class="mainContent7" id="Seven">
+        <div>
+          <i class="fas fa-x" onclick="hide6()"></i>
+          <img src="facily (1).jpg" alt="">
+          <div class="layer"></div>
+        </div>
+        <p><span>ب) مبنای یادگیری</span><br>
+          دیدگاه ساختن گرا به حیث مبنا و اساس یادگیری مورد توجه می باشد. گرچه ازدیگردیدگاه ها با حفظ اصول دیدگاه محوری
+          نیزاستفاده صورت می گیرد. ساختن گرایی به وسیله نظریه پردازان برجسته ای چون؛ دیویی، پیاژه، ویگوتسکی مطرح شده و
+          توسعه یافته است. درسالهای پسین محققان بیش ازینکه به چگونگی اکتساب یادگیری توجه کنند، به چگونه ساخته شدن آن می
+          پردازند. چگونه ساخته شدن دانش توسط خود شخص، روح دیدگاه ساختن گرایی است. به عبارت دیگر، در اندیشه ساختن گرایی
+          نقش
+          افراد در آنچه می آموزند و درک می کنند، تعیین کننده است.
+        </p>
+      </div>
+
+      <!-- eieth part -->
+
+      <div class="mainContent8" id="Eight">
+        <div>
+          <i class="fas fa-x" onclick="hide7()"></i>
+          <img src="facily (1).jpg" alt="">
+          <div class="layer"></div>
+        </div>
+        <p><span> پیش فرض</span><br>
+          پیش فرض اساسی این دیدگاه این است که انسانها یادگیرندگان فعال اند و باید شخصا به ساختن دانش و کشف اصول اساسی
+          برای
+          خود، اقدام کنند. ساختن گرایان برتعامل افراد و موقعیتها درجریان اکتساب و توسعه مهارتها و دانش تأکید دارند. این
+          دیدگاه با رفتارگرایی و پردازش اطلاعات دراین دونکته تفاوت دارد؛ رفتارگرایی برمحیط فردتأکیددارد و پردازش اطلاعات
+          به یادگیری در درون ذهن فرد اهمیت می دهد و به بافتی که یادگیری درآن اتفاق می افتد، توجه چندانی نمی کند. نقطه
+          مشترک این با نظریه شناختی اجتماعی دراین است که رفتار و محیط به صورت دوجانبه با یکدیگر تعامل می کند.
+
+        </p>
+      </div>
+
+      <!-- nineth part -->
+
+      <div class="mainContent9" id="Nine">
+        <div>
+          <i class="fas fa-x" onclick="hide8()"></i>
+          <img src="facily (1).jpg" alt="">
+          <div class="layer"></div>
+        </div>
+        <p>
+          <span> مأموریت کلی</span><br>
+          جستجوی حقیقت؛ حقیقت را نمی توان در دنیای مادی پیداکرد، زیرا این جهان پیوسته درحال تغییر و دیگرگونی است. جوینده
+          حقیقت باید از مرز حواس ظاهری رد شده و به عالم ادراکی مُثُل نزدیک گردد. جهان بیرون واقعیت نیست بلکه سایه های
+          ازحقیقت است. اندیشه واقعیت است. (ایده آلیسم = اندیشه گرایی یا آرمان گرایی)
+          جهان بیرون از ذهن نیز واقعی است، مستقل از اینکه توسط ذهن انسانی درک شود یا نشود. با شناخت جهان بیرون نیز می
+          توان
+          به حقیقت پی برد. بعضی اندیشمندان این مکتب برجنبه «عملی» تعلیم و تربیت تأکید زیاد دارند و برداشت آنها از عملی،
+          رشد مَنش و اخلاق را دربرمی گیرد. ( رئالیسم = واقعیت گرایی یا ماده گرایی)
+          (پراگماتیسم= اصالت عمل)
+          تحول اجتماعی و فعالیت اجتماعی نیازهای اساسی جامعه است، که ازطریق تعلیم و تربیت به روش مناسب، قابل حصول است.
+          تجربه های افراد جامعه همواره باید بازسازی گردد. بازسازیِ تجربه ی والدین از تربیت فرزند و بازسازی تجربه ی معلم
+          از
+          علم و آموزش مثالهای برازنده است، همچنان تجربه های دانش آموز نسبت به امور زندگی. (بازسازی گرایی)
+
+        </p>
+      </div>
+  </nav>
+  <!-- script for maincontent -->
+  <script>
+    const clickMe = document.getElementById('first');
+    function show0() {
+      clickMe.style.display = "flex";
+      clickMe1.style.display = "none"
+      clickMe2.style.display = "none"
+      clickMe3.style.display = "none"
+      clickMe4.style.display = "none"
+      clickMe5.style.display = "none"
+      clickMe6.style.display = "none"
+      clickMe7.style.display = "none"
+      clickMe8.style.display = "none"
+
+    }
+    function hide0() {
+      clickMe.style.display = "none";
+      clickMe1.style.display = "none"
+      clickMe2.style.display = "none"
+      clickMe3.style.display = "none"
+      clickMe4.style.display = "none"
+      clickMe5.style.display = "none"
+      clickMe6.style.display = "none"
+      clickMe7.style.display = "none"
+      clickMe8.style.display = "none"
+    }
+
+
+
+    const clickMe1 = document.getElementById('Two');
+    function show1() {
+      clickMe1.style.display = "flex";
+      clickMe.style.display = "none";
+      clickMe2.style.display = "none"
+      clickMe3.style.display = "none"
+      clickMe4.style.display = "none"
+      clickMe5.style.display = "none"
+      clickMe6.style.display = "none"
+      clickMe7.style.display = "none"
+      clickMe8.style.display = "none"
+
+    }
+    function hide1() {
+      clickMe1.style.display = "none";
+    }
+
+
+    const clickMe2 = document.getElementById('Three');
+    function show2() {
+      clickMe2.style.display = "flex";
+      clickMe.style.display = "none";
+      clickMe1.style.display = "none"
+      clickMe3.style.display = "none"
+      clickMe4.style.display = "none"
+      clickMe5.style.display = "none"
+      clickMe6.style.display = "none"
+      clickMe7.style.display = "none"
+      clickMe8.style.display = "none"
+
+    }
+    function hide2() {
+      clickMe2.style.display = "none";
+    }
+
+
+    const clickMe3 = document.getElementById('Four');
+    function show3() {
+      clickMe3.style.display = "flex";
+       clickMe.style.display = "none";
+      clickMe1.style.display = "none"
+      clickMe2.style.display = "none"
+      clickMe4.style.display = "none"
+      clickMe5.style.display = "none"
+      clickMe6.style.display = "none"
+      clickMe7.style.display = "none"
+      clickMe8.style.display = "none"
+
+
+    }
+    function hide3() {
+      clickMe3.style.display = "none";
+    }
+
+
+
+    const clickMe4 = document.getElementById('Five');
+    function show4() {
+      clickMe4.style.display = "flex";
+       clickMe.style.display = "none";
+      clickMe1.style.display = "none"
+      clickMe2.style.display = "none"
+      clickMe3.style.display = "none"
+      clickMe5.style.display = "none"
+      clickMe6.style.display = "none"
+      clickMe7.style.display = "none"
+      clickMe8.style.display = "none"
+
+
+    }
+    function hide4() {
+      clickMe4.style.display = "none";
+
+    }
+
+
+
+    const clickMe5 = document.getElementById('Six');
+    function show5() {
+      clickMe5.style.display = "flex";
+       clickMe.style.display = "none";
+      clickMe1.style.display = "none"
+      clickMe2.style.display = "none"
+      clickMe3.style.display = "none"
+      clickMe4.style.display = "none"
+      clickMe6.style.display = "none"
+      clickMe7.style.display = "none"
+      clickMe8.style.display = "none"
+
+
+    }
+    function hide5() {
+      clickMe5.style.display = "none";
+    }
+
+
+    const clickMe6 = document.getElementById('Seven');
+    function show6() {
+      clickMe6.style.display = "flex";
+       clickMe.style.display = "none";
+      clickMe1.style.display = "none"
+      clickMe2.style.display = "none"
+      clickMe3.style.display = "none"
+      clickMe4.style.display = "none"
+      clickMe5.style.display = "none"
+      clickMe7.style.display = "none"
+      clickMe8.style.display = "none"
+
+
+    }
+    function hide6() {
+      clickMe6.style.display = "none";
+    }
+
+
+    const clickMe7 = document.getElementById('Eight');
+    function show7() {
+      clickMe7.style.display = "flex";
+       clickMe.style.display = "none";
+      clickMe1.style.display = "none"
+      clickMe2.style.display = "none"
+      clickMe3.style.display = "none"
+      clickMe4.style.display = "none"
+      clickMe5.style.display = "none"
+      clickMe6.style.display = "none"
+      clickMe8.style.display = "none"
+
+
+    }
+    function hide7() {
+      clickMe7.style.display = "none";
+    }
+
+
+    const clickMe8 = document.getElementById('Nine');
+    function show8() {
+      clickMe8.style.display = "flex";
+       clickMe.style.display = "none";
+      clickMe1.style.display = "none"
+      clickMe2.style.display = "none"
+      clickMe3.style.display = "none"
+      clickMe4.style.display = "none"
+      clickMe5.style.display = "none"
+      clickMe6.style.display = "none"
+      clickMe7.style.display = "none"
+
+
+    }
+    function hide8() {
+      clickMe8.style.display = "none";
+    }
+  </script>
+
+
+
+
+</body>
+
+</html>
