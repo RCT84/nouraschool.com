@@ -371,6 +371,31 @@
         .mini{
             display: none;
         }
+        .sesite{
+            color:white;
+            background-color: #0ef;
+            font-size: 20px;
+          padding:10px 20px;
+          border-radius: 999px;
+            border:none;
+            transition: all .3s ease;
+            
+        }
+      .sesite:hover{
+        color:#0ef;
+        background-color: white;
+        border:1px solid #0ef;
+      }
+      .sesite a{
+        text-decoration: none;
+        width:100%;
+        height:100%;
+        color:white
+      }
+      .sesite a:hover{
+        color:#0ef;
+      }
+        
     </style>
 </head>
 
@@ -422,6 +447,7 @@
                     <input type="password" placeholder="password" required>
                 </div>
                 <input type="submit" value="Log In">
+                <button class="sesite"><a href="main.html">visit website</a></button>
             </form>
         </div>
     </div>
@@ -559,7 +585,7 @@
             padding-left: 25px;
         }
 
-        .password {
+        .password1 {
             border: 1px solid #0ef;
             width: 300px;
             margin: auto;
@@ -568,7 +594,7 @@
             padding: 0px 10px 0px 10px;
         }
 
-        .password input {
+        .password1 input {
             background: none;
             width: 100%;
             color: #df8359;
@@ -599,7 +625,7 @@
             <i class="fas fa-envelope" style="position:absolute;line-height: 45px;"></i>
             <input type="email" placeholder="Your Email address" required>
         </div>
-        <div class="password">
+        <div class="password1">
             <i class="fas fa-lock" style="position:absolute;line-height: 45px;"></i>
             <input type="password" placeholder="Your password" required>
             <i class="fas fa-eye" style="position:absolute;line-height: 45px; transform: translateX(-20px);"></i>
