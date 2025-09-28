@@ -1198,7 +1198,7 @@
 
                 <div class="team-col">
                     <img src="our team next person.png" alt="">
-                    <p style="text-align: center;font-size: 30px;padding:40px;"><a href="teachers.html"
+                    <p style="text-align: center;font-size: 30px;padding:40px;"><a href="ourtem.html"
                             style="text-decoration: none;color:black;cursor: pointer;">اساتید و معلومات بیشتر<i
                                 class="fas fa-arrow-left"></i></a></p>
 
@@ -1223,75 +1223,45 @@
             <div class="middleacti1" id="videoup1">
                 <i class="fas fa-close" onclick="closevideo1()"
                     style="text-align: right;width:100%;padding:10px; cursor: pointer;"> بستن </i>
-                <video controls src="activity video.mp4"></video>
-                <i class="fas fa-forward"
-                    style="flex-basis: 31%; text-align: center; cursor: pointer;padding:10px;"></i>
-                <i class="fas fa-pause" style="flex-basis: 31%; text-align: center; cursor: pointer;padding:10px;"></i>
-                <i class="fas fa-play" style="flex-basis: 31%; text-align: center; cursor: pointer;padding:10px;"></i>
-                <i class="fas fa-backward"
-                    style="flex-basis: 31%; text-align: center; cursor: pointer;padding:10px;"></i>
+                <video controls id="video1" src="activity video.mp4"></video>
+               
             </div>
             <!-- first view -->
             <div class="middleacti1" id="videoup2">
                 <i class="fas fa-close" onclick="closevideo2()"
                     style="text-align: right;width:100%;padding:10px; cursor: pointer;"> بستن </i>
-                <video controls src="activity video.mp4"></video>
-                <i class="fas fa-forward"
-                    style="flex-basis: 31%; text-align: center; cursor: pointer;padding:10px;"></i>
-                <i class="fas fa-pause" style="flex-basis: 31%; text-align: center; cursor: pointer;padding:10px;"></i>
-                <i class="fas fa-play" style="flex-basis: 31%; text-align: center; cursor: pointer;padding:10px;"></i>
-                <i class="fas fa-backward"
-                    style="flex-basis: 31%; text-align: center; cursor: pointer;padding:10px;"></i>
+                <video controls id="video2" src="activity video.mp4"></video>
+               
             </div>
             <!-- second view -->
             <div class="middleacti1" id="videoup3">
                 <i class="fas fa-close" onclick="closevideo3()"
                     style="text-align: right;width:100%;padding:10px; cursor: pointer;"> بستن </i>
-                <video controls src="activity video.mp4"></video>
-                <i class="fas fa-forward"
-                    style="flex-basis: 31%; text-align: center; cursor: pointer;padding:10px;"></i>
-                <i class="fas fa-pause" style="flex-basis: 31%; text-align: center; cursor: pointer;padding:10px;"></i>
-                <i class="fas fa-play" style="flex-basis: 31%; text-align: center; cursor: pointer;padding:10px;"></i>
-                <i class="fas fa-backward"
-                    style="flex-basis: 31%; text-align: center; cursor: pointer;padding:10px;"></i>
+                <video controls id="video3" src="activity video.mp4"></video>
+               
             </div>
 
             <!-- third view -->
             <div class="middleacti1" id="videoup4">
                 <i class="fas fa-close" onclick="closevideo4()"
                     style="text-align: right;width:100%;padding:10px; cursor: pointer;"> بستن </i>
-                <video controls src="activity video.mp4"></video>
-                <i class="fas fa-forward"
-                    style="flex-basis: 31%; text-align: center; cursor: pointer;padding:10px;"></i>
-                <i class="fas fa-pause" style="flex-basis: 31%; text-align: center; cursor: pointer;padding:10px;"></i>
-                <i class="fas fa-play" style="flex-basis: 31%; text-align: center; cursor: pointer;padding:10px;"></i>
-                <i class="fas fa-backward"
-                    style="flex-basis: 31%; text-align: center; cursor: pointer;padding:10px;"></i>
+                <video controls id="video4" src="activity video.mp4"></video>
+               
             </div>
 
             <!-- fourth view -->
             <div class="middleacti1" id="videoup5">
                 <i class="fas fa-close" onclick="closevideo5()"
                     style="text-align: right;width:100%;padding:10px; cursor: pointer;"> بستن </i>
-                <video controls src="activity video.mp4"></video>
-                <i class="fas fa-forward"
-                    style="flex-basis: 31%; text-align: center; cursor: pointer;padding:10px;"></i>
-                <i class="fas fa-pause" style="flex-basis: 31%; text-align: center; cursor: pointer;padding:10px;"></i>
-                <i class="fas fa-play" style="flex-basis: 31%; text-align: center; cursor: pointer;padding:10px;"></i>
-                <i class="fas fa-backward"
-                    style="flex-basis: 31%; text-align: center; cursor: pointer;padding:10px;"></i>
+                <video controls id="video5" src="activity video.mp4"></video>
+              
             </div>
             <!-- sixth view -->
             <div class="middleacti1" id="videoup6">
                 <i class="fas fa-close" onclick="closevideo6()"
                     style="text-align: right;width:100%;padding:10px; cursor: pointer;"> بستن </i>
-                <video controls src="activity video.mp4"></video>
-                <i class="fas fa-forward"
-                    style="flex-basis: 31%; text-align: center; cursor: pointer;padding:10px;"></i>
-                <i class="fas fa-pause" style="flex-basis: 31%; text-align: center; cursor: pointer;padding:10px;"></i>
-                <i class="fas fa-play" style="flex-basis: 31%; text-align: center; cursor: pointer;padding:10px;"></i>
-                <i class="fas fa-backward"
-                    style="flex-basis: 31%; text-align: center; cursor: pointer;padding:10px;"></i>
+                <video controls id="video6" src="activity video.mp4"></video>
+             
             </div>
 
             <div class="rightacti">
@@ -1416,7 +1386,10 @@
     <script>
         const videopop = document.getElementById('activities')
         function closevideo1() {
-            videoup1.style.display = 'none'
+            videoup1.style.display = 'none';
+            if (!video1.paused) {
+                video1.pause();
+            }
         }
         function display1() {
             videoup1.style.display = 'block'
@@ -1429,6 +1402,9 @@
 
         function closevideo2() {
             videoup2.style.display = 'none'
+            if (!video2.paused) {
+                video2.pause();
+            }
         }
         function display2() {
             videoup2.style.display = 'block'
@@ -1442,6 +1418,9 @@
 
         function closevideo3() {
             videoup3.style.display = 'none'
+            if (!video3.paused) {
+                video3.pause();
+            }
         }
         function display3() {
             videoup3.style.display = 'block'
@@ -1454,6 +1433,9 @@
 
         function closevideo4() {
             videoup4.style.display = 'none'
+            if (!video4.paused) {
+                video4.pause();
+            }
         }
         function display4() {
             videoup4.style.display = 'block'
@@ -1466,11 +1448,14 @@
 
         function closevideo5() {
             videoup5.style.display = 'none'
+            if (!video5.paused) {
+                video5.pause();
+            }
         }
         function display5() {
             videoup5.style.display = 'block'
             videoup1.style.display = 'none'
-            videoup5.style.display = 'none'
+            videoup2.style.display = 'none'
             videoup3.style.display = 'none'
             videoup4.style.display = 'none'
             videoup6.style.display = 'none'
@@ -1478,6 +1463,9 @@
 
         function closevideo6() {
             videoup6.style.display = 'none'
+            if (!video6.paused) {
+                video6.pause();
+            }
         }
         function display6() {
             videoup6.style.display = 'block'
@@ -1492,3 +1480,12 @@
 </body>
 
 </html>
+
+
+<!-- 
+function playPause() { 
+  if (myVideo.paused) 
+    myVideo.play(); 
+  else 
+    myVideo.pause(); 
+ }  -->
