@@ -10,117 +10,137 @@
         integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-        <style>
-            *{
-    padding:0;
-    margin:0;
-}
-body{
-    background-color: rgb(189, 247, 238);
-    animation: autoshow .6s;
-}
-@keyframes autoshow {
-from{
-        transform: translateY(100px) ;
-    opacity: 0;
-}
-    to {
-        opacity: 1;
-        transform: translate(0px) scale(1);
-    }
-}
-nav{
-    display: flex;
-    justify-content: space-between;
-    padding: 10px;
-    background-color:#0ef;
-}
-section{
-    display: flex;
-    justify-content: space-between;
-    padding:30px;
-}
-body h1{
-    text-align: center;
-    padding:20px;
-}
-.maincontent{
-    border:1px solid black;
-    border-radius: 5px;
-    flex-basis: 31%;
-    padding:10px;
-    min-height:70vh;
-}
-.maincontent h1{
-    margin-bottom: 15px;
-    text-align: center;
-}
-.row .class{    
-    display: flex;
-    justify-content: space-between;
-    padding:10px 12px;
-    border-radius: 5px;
-    border:1px solid white;
-    background-color: #0ef;
-    cursor: pointer;
-}
-.row .class a{
-    text-decoration: none;
-    color:black;
-    font-weight: bold;
-}
-.title{
-    width:100%;
-}
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        body {
+            background-color: rgb(189, 247, 238);
+            animation: autoshow .6s;
+        }
+
+        @keyframes autoshow {
+            from {
+                transform: translateY(100px);
+                opacity: 0;
+            }
+
+            to {
+                opacity: 1;
+                transform: translate(0px) scale(1);
+            }
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            padding: 10px;
+            background-color: #0ef;
+        }
+
+        section {
+            display: flex;
+            justify-content: space-between;
+            padding: 30px;
+        }
+
+        body h1 {
+            text-align: center;
+            padding: 20px;
+        }
+
+        .maincontent {
+            border: 1px solid black;
+            border-radius: 5px;
+            flex-basis: 31%;
+            padding: 10px;
+            min-height: 70vh;
+        }
+
+        .maincontent h1 {
+            margin-bottom: 15px;
+            text-align: center;
+        }
+
+        .row .class {
+            display: flex;
+            justify-content: space-between;
+            padding: 10px 12px;
+            border-radius: 5px;
+            border: 1px solid white;
+            background-color: #0ef;
+            cursor: pointer;
+        }
+
+        .row .class a {
+            text-decoration: none;
+            color: black;
+            font-weight: bold;
+        }
+
+        .title {
+            width: 100%;
+        }
 
 
 
 
 
-.content{
-    padding:10px;
-    border:1px solid white;
-    border-top: none;
-    margin-top:5px;
-    height:0;
-    justify-content: right;
-    transition: all ease 1s;
-    display: none;
-    animation: autoshow1 0.3s;
-}
-@keyframes autoshow1 {
-from{
-        transform: translateY(-40px) ;
-    opacity: 0;
-}
-    to {
-        opacity: 1;
-        transform: translate(0px) scale(1);
-    }
-}
-.content div{
-    padding:10px;
-    cursor: pointer;
-    text-align: center;
-}
+        .content {
+            padding: 10px;
+            border: 1px solid white;
+            border-top: none;
+            margin-top: 5px;
+            height: 0;
+            justify-content: right;
+            transition: all ease 1s;
+            display: none;
+            animation: autoshow1 0.3s;
+        }
 
-@media (max-width:990px){
-    section{
-        flex-direction: column;
-    }
-    .maincontent{
-        margin:10px;
-    }
-}
+        @keyframes autoshow1 {
+            from {
+                transform: translateY(-40px);
+                opacity: 0;
+            }
 
-        </style>
+            to {
+                opacity: 1;
+                transform: translate(0px) scale(1);
+            }
+        }
+
+        .content div {
+            padding: 10px;
+            cursor: pointer;
+            text-align: center;
+        }
+
+        @media (max-width:990px) {
+            section {
+                flex-direction: column;
+            }
+
+            .maincontent {
+                margin: 10px;
+            }
+        }
+        .navlinks ul li a{
+            text-decoration: none;
+            color:black;
+            font-weight: bold;
+
+        }
+    </style>
 </head>
 
 <body>
     <nav class="navbar">
         <div class="navlinks">
             <ul>
-                <li><a href="/main.html#learna">بازگشت</a></li>
+                <li><a href="main.html#learna">بازگشت</a></li>
             </ul>
         </div>
         <img src="" alt="logo">
@@ -131,8 +151,9 @@ from{
         <!-- 1-6 classes -->
         <div class="maincontent">
             <h1>صنوف ابتدایی</h1>
-             <div class="row">
-                <div class="class" onclick="showme0()"><a href="#">صنف امادگی</a><i class="fas fa-chevron-down"></i></div>
+            <div class="row">
+                <div class="class" onclick="showme0()"><a href="#">صنف امادگی</a><i class="fas fa-chevron-down"></i>
+                </div>
                 <div class="content" id="zero">
                     <img src="" alt="logo">
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, harum neque optio earum
@@ -305,10 +326,10 @@ from{
     <!-- primary classes -->
     <script>
 
-          let DivHide0 = document.getElementById('zero');
+        let DivHide0 = document.getElementById('zero');
         function showme0() {
             DivHide0.style.height = 'auto';
-            DivHide0.style.display ='block';
+            DivHide0.style.display = 'block';
             DivHide.style.display = 'none';
             DivHide1.style.display = 'none';
             DivHide2.style.display = 'none';
@@ -333,7 +354,7 @@ from{
             DivHide3.style.display = 'none';
             DivHide4.style.display = 'none';
             DivHide5.style.display = 'none';
-                   DivHide0.style.display ='none';
+            DivHide0.style.display = 'none';
         }
         function hideme() {
             DivHide.style.display = 'none';
@@ -351,7 +372,7 @@ from{
             DivHide4.style.display = 'none';
             DivHide5.style.display = 'none';
             DivHide1.style.height = 'auto';
-                   DivHide0.style.display ='none';
+            DivHide0.style.display = 'none';
         }
         function hideme1() {
             DivHide1.style.display = 'none';
@@ -368,7 +389,7 @@ from{
             DivHide4.style.display = 'none';
             DivHide5.style.display = 'none';
             DivHide2.style.height = 'auto';
-                   DivHide0.style.display ='none';
+            DivHide0.style.display = 'none';
         }
         function hideme2() {
             DivHide2.style.display = 'none';
@@ -386,7 +407,7 @@ from{
             DivHide5.style.display = 'none';
             DivHide2.style.height = 'auto';
             DivHide3.style.height = 'auto';
-                   DivHide0.style.display ='none';
+            DivHide0.style.display = 'none';
         }
         function hideme3() {
             DivHide3.style.display = 'none';
@@ -404,7 +425,7 @@ from{
             DivHide5.style.display = 'none';
             DivHide2.style.height = 'auto';
             DivHide4.style.height = 'auto';
-                   DivHide0.style.display ='none';
+            DivHide0.style.display = 'none';
         }
         function hideme4() {
             DivHide4.style.display = 'none';
@@ -422,7 +443,7 @@ from{
             DivHide4.style.display = 'none';
             DivHide2.style.height = 'auto';
             DivHide5.style.height = 'auto';
-                   DivHide0.style.display ='none';
+            DivHide0.style.display = 'none';
         }
         function hideme5() {
             DivHide5.style.display = 'none';
@@ -508,7 +529,7 @@ from{
         function see2() {
             seeme2.style.display = 'block';
             seeme1.style.display = 'none';
-            seeme3.style.display ='none';
+            seeme3.style.display = 'none';
             seeme.style.display = 'none';
 
             seeme2.style.height = 'auto';
@@ -521,8 +542,8 @@ from{
         const seeme3 = document.getElementById('hellofour');
         function see3() {
             seeme3.style.display = 'block';
-             seeme1.style.display = 'none';
-            seeme2.style.display ='none';
+            seeme1.style.display = 'none';
+            seeme2.style.display = 'none';
             seeme.style.display = 'none';
 
             seeme3.style.height = 'auto';
